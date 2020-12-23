@@ -8,7 +8,10 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 import java.util.Set;
 
-// 特殊元素定位
+/**
+ * 特殊元素定位(下拉框，嵌套iframe,切换窗口)
+ */
+
 public class SpecialElement {
     public static void main(String[] args) throws InterruptedException {
         WebDriver driver = Driver.open("chrom");
@@ -16,9 +19,7 @@ public class SpecialElement {
 //        iframe(driver);
         windowsChange(driver);
 
-
         Driver.close(driver);
-
 
     }
 
@@ -33,7 +34,7 @@ public class SpecialElement {
         Select select = new Select(element);
         // 获取下拉框的所有值
         List<WebElement> options = select.getOptions();
-        for(WebElement we : options){
+        for (WebElement we : options) {
             System.out.println(we.getTagName());
         }
         // 找到第一个元素
@@ -47,7 +48,7 @@ public class SpecialElement {
     }
 
     // 嵌套页面的定位
-    public static void iframe(WebDriver driver){
+    public static void iframe(WebDriver driver) {
         driver.get("https://www.nike.com/cn/");
         WebElement element = driver.findElement(By.xpath("//*[@role='banner']"));
         System.out.println("外层data-version：" + element.getAttribute("data-version"));
@@ -87,8 +88,8 @@ public class SpecialElement {
         // 获取所有handle
         Set<String> handles = driver.getWindowHandles();
         String handleTwo = "";
-        for(String handle : handles){
-            if(!handle.equals(handleOne)){
+        for (String handle : handles) {
+            if (!handle.equals(handleOne)) {
                 handleTwo = handle;
                 break;
             }
@@ -99,9 +100,9 @@ public class SpecialElement {
         // 点击到第三个窗口
         driver.findElement(By.xpath("//a[text()='京东国际']")).click();
         Set<String> handles1 = driver.getWindowHandles();
-        String handleThree= "";
-        for(String handle : handles1){
-            if(!(handle.equals(handleOne)) && !(handle.equals(handleTwo))){
+        String handleThree = "";
+        for (String handle : handles1) {
+            if (!(handle.equals(handleOne)) && !(handle.equals(handleTwo))) {
                 handleThree = handle;
                 break;
             }

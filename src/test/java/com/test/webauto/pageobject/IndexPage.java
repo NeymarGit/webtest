@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
- * 登录后的首页
+ * jenkins登录后的首页
  */
 public class IndexPage extends BasePage {
 

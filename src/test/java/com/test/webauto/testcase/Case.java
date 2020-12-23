@@ -5,6 +5,8 @@ import com.test.webauto.common.BaseCase;
 import com.test.webauto.constant.Constant;
 import com.test.webauto.pageobject.IndexPage;
 import com.test.webauto.pageobject.LoginPage;
+import com.test.webauto.pageobject.PacsIndexPage;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -34,6 +36,26 @@ public class Case extends BaseCase {
         loginPage.inputLoginName(Constant.LOGIN_NAME);
         loginPage.inputPwd(Constant.PASSWORD);
         loginPage.clickLoginBtn();
+
+        // 首页验证是否登录成功
+        PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
+        Boolean userInfoExist = pacsIndexPage.userInfoExist();
+        Assert.assertTrue(userInfoExist);
+
+        pacsIndexPage.clickMenu();
+        pacsIndexPage.clickSoManage();
+        Thread.sleep(1000);
+        // 创建订单
+        pacsIndexPage.clickCreateSo();
+
+
+//        // 退出
+//        pacsIndexPage.clickExit();
+//        Alert alert = driver.switchTo().alert();
+//        alert.accept();
+
+
+
 
 /*
         // 登录首页验证
