@@ -1,0 +1,90 @@
+package com.test.webauto.common;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+/***
+ * 页面类抽取出来的父类
+ */
+
+public class BasePage {
+    protected WebDriver driver;
+
+    public BasePage(WebDriver driver){
+        this.driver = driver;
+    }
+
+    // 等待5s元素是否可见
+    public WebElement elementVisibility (By by){
+        WebElement element = null;
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            element = wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+        } catch (Exception e) {
+            System.out.println("元素定位异常" + e.getMessage());
+        }
+        return element;
+    }
+
+    // 等待5s元素是否点击
+    public WebElement elementClickable(By by){
+        WebElement element = null;
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            element = wait.until(ExpectedConditions.elementToBeClickable(by));
+        } catch (Exception e) {
+            System.out.println("元素定位异常" + e.getMessage());
+        }
+        return element;
+    }
+
+    // 输入文本
+    public void input(By by,String content){
+        WebElement element = elementVisibility(by);
+        if (element != null){
+            element.clear();
+            element.sendKeys(content);
+        }
+    }
+
+    // 点击按钮
+    public void click(By by){
+        WebElement element = elementClickable(by);
+        if(element != null){
+            element.click();
+        }
+    }
+
+    // 获取元素的文本
+    public String getText(By by){
+        WebElement element = elementVisibility(by);
+        if(element != null){
+            return element.getText();
+        }
+        return "";
+    }
+
+    // 获取元素属性值
+    public String getAttribute(By by,String attribute){
+        WebElement element = elementVisibility(by);
+        if(element != null){
+            return element.getAttribute(attribute);
+        }
+        return "";
+    }
+
+    // 元素是否可见
+    public boolean isDisplay(By by){
+        // 定位元素时判断元素5s内是否加载出来
+        WebElement element = elementVisibility(by);
+        if(element != null){
+            // 判断是否可见
+            return element.isDisplayed();
+        }
+        return false;
+    }
+
+}
