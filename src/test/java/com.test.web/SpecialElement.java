@@ -59,7 +59,7 @@ public class SpecialElement {
         System.out.println("内层data-version：" + element1.getAttribute("rel"));
 
         //切换到父iframe
-        driver.switchTo().parentFrame();
+        driver.switchTo().parentFrame() ;
         System.out.println("外层data-version：" + element.getAttribute("data-version"));
 
         //通过name或id定位iframe

@@ -40,7 +40,7 @@ public class Case extends BaseCase {
         // 首页验证是否登录成功
         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
         Boolean userInfoExist = pacsIndexPage.userInfoExist();
-        Assert.assertTrue(userInfoExist);
+        Assert.assertTrue(userInfoExist );
 
         pacsIndexPage.clickMenu();
         pacsIndexPage.clickSoManage();
