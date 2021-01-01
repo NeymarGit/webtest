@@ -52,7 +52,7 @@ public class PacsIndexPage extends BasePage {
 
     //—°‘ÒµÍ∆Ã
     public void chooseShop(){
-        click(shopBy);
+        rollClick(shopBy);
 
     }
 

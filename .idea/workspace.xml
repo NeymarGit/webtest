@@ -8,18 +8,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="定位到创单页面">
+    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="切换店铺优化">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/SpecialElement02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/SpecialElement02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/Util/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/Util/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/common/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/PacsIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/PacsIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/Case.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/Case.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/Case.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +85,18 @@
       <recent name="C:\IDEA\Neymar\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Case.loginSucess">
+  <component name="RunManager" selected="TestNG.Case">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Case (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Neymar" />
       <extension name="coverage">
@@ -110,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Case (4)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Case (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Neymar" />
       <extension name="coverage">
         <pattern>
@@ -182,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Case" />
+        <item itemvalue="TestNG.Case (2)" />
         <item itemvalue="TestNG.Case.loginSucess" />
         <item itemvalue="TestNG.Case.loginSucess (1)" />
         <item itemvalue="TestNG.Case (1)" />
-        <item itemvalue="TestNG.Case (4)" />
-        <item itemvalue="TestNG.Case" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +250,7 @@
       <workItem from="1609341525793" duration="682000" />
       <workItem from="1609342245273" duration="64000" />
       <workItem from="1609342329143" duration="1845000" />
-      <workItem from="1609483129555" duration="841000" />
+      <workItem from="1609483129555" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="Web自动化第一次提交">
       <created>1608727588607</created>
@@ -269,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608738616243</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="切换店铺优化">
+      <created>1609484136579</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609484136579</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,6 +314,11 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -310,7 +326,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Web自动化第一次提交" />
     <MESSAGE value="定位到创单页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="定位到创单页面" />
+    <MESSAGE value="切换店铺优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="切换店铺优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="343" key="#Notifications" timestamp="1608726221504">
@@ -337,22 +354,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608726623660" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609339203100">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609484275153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609339203100" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609339203100">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609484275153" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609484275152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609339203100" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609339203100">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609484275152" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609484275152">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609339203100" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609339203100">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609484275152" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609484275153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609339203100" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609484275153" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608462464646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -373,10 +390,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="554" y="122" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608726612460" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608739796992">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609484148609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608739796992" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609484148609" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

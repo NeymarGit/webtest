@@ -61,11 +61,11 @@ public class BasePage {
 
     // 滚动到指定元素的位置点击
     public void rollClick(By by) {
-        // 强转类型
-        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-        // JS滚动到指定元素位置
-        jsExecutor.executeScript("arguments[0].scrollIntoView()", by);
         WebElement element = elementClickable(by);
+            // 强转类型
+            JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+            // JS滚动到指定元素位置
+            jsExecutor.executeScript("arguments[0].scrollIntoView()", element);
         if (element != null) {
             element.click();
         }
