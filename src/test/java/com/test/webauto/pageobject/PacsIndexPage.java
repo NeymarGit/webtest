@@ -1,13 +1,25 @@
 package com.test.webauto.pageobject;
 
+import com.test.webauto.Util.Driver;
 import com.test.webauto.common.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class PacsIndexPage extends BasePage {
 
+    WebDriver driver = null;
     // 用户信息
     private By userInfoBy = By.id("userinfo");
+
+    // 角色权限信息
+    private By roleInfoBy = By.id("roleinfo");
+
+    // 切换店铺信息
+    private By shopBy = By.id("476896");
+
+    // 确认按钮
+    private By determineBy = By.xpath("//span[text()='确定']");
 
     // 左侧菜单
     private By menuBy = By.xpath("//*[@class='content content-closed']");
@@ -25,7 +37,7 @@ public class PacsIndexPage extends BasePage {
 
     public PacsIndexPage(WebDriver driver) {
         super(driver);
-
+        this.driver = driver;
     }
 
     // 判断页面用户信息是否存在
@@ -33,6 +45,23 @@ public class PacsIndexPage extends BasePage {
         return isDisplay(userInfoBy);
     }
 
+    // 切换权限
+    public void clickRole(){
+        click(roleInfoBy);
+    }
+
+    //选择店铺
+    public void chooseShop(){
+        click(shopBy);
+
+    }
+
+    // 点击确认
+    public void clickDetermine(){
+        click(determineBy);
+    }
+
+    // 点击首页左侧菜单
     public void clickMenu() {
         click(menuBy);
     }

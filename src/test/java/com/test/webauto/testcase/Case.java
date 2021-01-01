@@ -40,8 +40,15 @@ public class Case extends BaseCase {
         // 首页验证是否登录成功
         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
         Boolean userInfoExist = pacsIndexPage.userInfoExist();
-        Assert.assertTrue(userInfoExist );
+        Assert.assertTrue(userInfoExist);
 
+        // 切换店铺权限
+        pacsIndexPage.clickRole();
+        pacsIndexPage.chooseShop();
+        pacsIndexPage.clickDetermine();
+        Thread.sleep(1000);
+
+        // 找到下单页面
         pacsIndexPage.clickMenu();
         pacsIndexPage.clickSoManage();
         Thread.sleep(1000);

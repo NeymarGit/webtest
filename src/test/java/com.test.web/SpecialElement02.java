@@ -17,7 +17,7 @@ public class SpecialElement02 {
 
     }
 
-    // js操作
+    // js操作:设置和去除元素属性、滚动到指定元素位置
     public static void jsOperation(WebDriver driver){
         driver.get("https://www.12306.cn/index/");
         // 强转类型
