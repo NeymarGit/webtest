@@ -3,18 +3,16 @@ package com.test.webauto.testcase;
 import com.test.webauto.Util.Driver;
 import com.test.webauto.common.BaseCase;
 import com.test.webauto.constant.Constant;
-import com.test.webauto.pageobject.IndexPage;
 import com.test.webauto.pageobject.LoginPage;
 import com.test.webauto.pageobject.PacsIndexPage;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 // 实际业务数据
-public class Case extends BaseCase {
+public class LoginCase extends BaseCase {
 
-    WebDriver driver;
+    WebDriver driver ;
 
     @BeforeClass
     public void open() {
@@ -114,11 +112,9 @@ public class Case extends BaseCase {
  */
 
     @AfterClass
-    public void closeDriver(){
+    public void closeDriver() {
         close(driver);
     }
-
-
 
 
 }

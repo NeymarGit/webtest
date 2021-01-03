@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * jenkins登录后的首页
  */
-public class IndexPage extends BasePage {
+public class JenkinsIndexPage extends BasePage {
 
     // Jenkins图片
     private By imgBy = By.id("jenkins-name-icon");
@@ -19,7 +19,7 @@ public class IndexPage extends BasePage {
     private By logOutBy = By.xpath("//*[text()='注销']//parent::a");
 
 
-    public IndexPage(WebDriver driver) {
+    public JenkinsIndexPage(WebDriver driver) {
         super(driver);
     }
 

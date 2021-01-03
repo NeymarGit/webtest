@@ -19,8 +19,10 @@ public class Constant {
     public static final String PAC_URL = UAC_URL + "?appkey=PAC-TEST";
     public static final String TOMS_URL = UAC_URL + "?appkey=OMS-TEST";
 
-    public static final String LOGIN_NAME = "liuyanghe";
+    public static final String LOGIN_NAME = "liuyanghe1";
     public static final String PASSWORD = "qqqq1111";
+
+    public static final String SHOP_NAME = "PACªÿπÈ≤‚ ‘µÍ∆Ã1";
 
 
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /***
@@ -98,6 +99,15 @@ public class BasePage {
             return element.isDisplayed();
         }
         return false;
+    }
+
+    // Ñ¡Ôñ¿ò
+    public void select(By by,String value) {
+        WebElement element = elementClickable(by);
+        if (element != null) {
+            Select select = new Select(element);
+            select.selectByVisibleText(value);
+        }
     }
 
 }
