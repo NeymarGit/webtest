@@ -1,7 +1,8 @@
-package com.test.webauto.common;
+package com.test.addaccount.common;
 
-import com.test.webauto.util.Driver;
-import com.test.webauto.constant.Constant;
+
+import com.test.addaccount.constant.Constant;
+import com.test.addaccount.util.Driver;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;

@@ -1,4 +1,4 @@
-package com.test.webauto.common;
+package com.test.addaccount.common;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -114,7 +114,7 @@ public class BasePage {
         WebElement element = elementClickable(by);
         if (element != null) {
             Select select = new Select(element);
-            select.selectByIndex(1);
+            select.selectByIndex(0);
         }
     }
 

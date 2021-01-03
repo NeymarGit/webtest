@@ -1,23 +1,15 @@
 package com.test.webauto.testcase;
 
-import com.test.webauto.Util.Driver;
 import com.test.webauto.common.BaseCase;
 import com.test.webauto.constant.Constant;
 import com.test.webauto.pageobject.LoginPage;
 import com.test.webauto.pageobject.PacsIndexPage;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
 // 实际业务数据
 public class LoginCase extends BaseCase {
 
-    WebDriver driver ;
-
-    @BeforeClass
-    public void open() {
-        driver = Driver.open(Constant.DEFULT_BROWSE);
-    }
 
     // 每次跑@Test用例方法前回到首页
     @BeforeMethod
@@ -39,19 +31,6 @@ public class LoginCase extends BaseCase {
         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
         Boolean userInfoExist = pacsIndexPage.userInfoExist();
         Assert.assertTrue(userInfoExist);
-
-        // 切换店铺权限
-        pacsIndexPage.clickRole();
-        pacsIndexPage.chooseShop();
-        pacsIndexPage.clickDetermine();
-        Thread.sleep(1000);
-
-        // 找到下单页面
-        pacsIndexPage.clickMenu();
-        pacsIndexPage.clickSoManage();
-        Thread.sleep(1000);
-        // 创建订单
-        pacsIndexPage.clickCreateSo();
 
 
 //        // 退出
@@ -81,8 +60,8 @@ public class LoginCase extends BaseCase {
  */
 
     }
-
-/*    //登录失败的case
+/*
+    //登录失败的case
     @Test(dataProvider = "datas")
     public void loginFail(String name, String pwd) {
         LoginPage loginPage = new LoginPage(driver);
@@ -108,13 +87,8 @@ public class LoginCase extends BaseCase {
         };
         return datas;
     }
+*/
 
- */
-
-    @AfterClass
-    public void closeDriver() {
-        close(driver);
-    }
 
 
 }

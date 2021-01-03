@@ -1,30 +1,21 @@
 package com.test.webauto.testcase;
 
-import com.test.webauto.Util.Driver;
 import com.test.webauto.common.BaseCase;
 import com.test.webauto.constant.Constant;
 import com.test.webauto.pageobject.CreateSoPage;
 import com.test.webauto.pageobject.LoginPage;
 import com.test.webauto.pageobject.PacsIndexPage;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class CreateSoCase extends BaseCase {
 
-    WebDriver driver;
-
-    @BeforeClass
-    public void open() {
-        driver = Driver.open(Constant.DEFULT_BROWSE);
-        driver.manage().window().maximize();
-        driver.get(Constant.PAC_URL);
-
-    }
 
     @Test(priority = 1) // 设置运行优先级，默认为0优先跑
     public void createSo() throws InterruptedException {
+
+        driver.get(Constant.PAC_URL);
+        driver.manage().window().maximize();
+
         // 登录页面
         LoginPage loginPage = new LoginPage(driver);
         loginPage.inputLoginName(Constant.LOGIN_NAME);
@@ -34,7 +25,7 @@ public class CreateSoCase extends BaseCase {
         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
         // 切换店铺权限
         pacsIndexPage.clickRole();
-        pacsIndexPage.chooseShop();
+        pacsIndexPage.chooseShop("PAC回归测试店铺0");
         pacsIndexPage.clickDetermine();
         Thread.sleep(1000);
 
@@ -69,8 +60,8 @@ public class CreateSoCase extends BaseCase {
 
         // 订单支付和发票信息
         createSoPage.clickPaymentAndInvoice();
-        createSoPage.selectOrderType("京东订单");
-        createSoPage.selectPaymentType("支付宝");
+        createSoPage.selectOrderType();
+        createSoPage.selectPaymentType();
         String value = String.valueOf(System.currentTimeMillis());
         createSoPage.inputOocSource(value);
         createSoPage.inputOutOrderCode(value);
@@ -100,11 +91,5 @@ public class CreateSoCase extends BaseCase {
         createSoPage.clickCreateAndSubmit();
 
     }
-
-    @AfterClass
-    public void closeDriver() {
-        close(driver);
-    }
-
 
 }

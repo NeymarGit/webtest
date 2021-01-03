@@ -1,11 +1,8 @@
 package com.test.webauto.pageobject;
 
-import com.test.webauto.Util.Driver;
 import com.test.webauto.common.BasePage;
-import com.test.webauto.constant.Constant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class PacsIndexPage extends BasePage {
 
@@ -16,8 +13,7 @@ public class PacsIndexPage extends BasePage {
     // 角色权限信息
     private By roleInfoBy = By.id("roleinfo");
 
-    // 切换店铺信息
-    private By shopBy = By.xpath("//td[text()='" + Constant.SHOP_NAME + "']");
+
 
     // 确认按钮
     private By determineBy = By.xpath("//span[text()='确定']");
@@ -52,7 +48,9 @@ public class PacsIndexPage extends BasePage {
     }
 
     //选择店铺
-    public void chooseShop() {
+    public void chooseShop(String shopName) {
+        // 切换店铺信息
+        By shopBy = By.xpath("//td[text()='" + shopName + "']");
         rollClick(shopBy);
 
     }

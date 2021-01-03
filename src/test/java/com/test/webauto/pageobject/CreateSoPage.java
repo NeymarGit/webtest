@@ -158,9 +158,17 @@ public class CreateSoPage extends PacsIndexPage {
     public void selectOrderType(String orderType) {
         select(orderTypeBy, orderType);
     }
+    public void selectOrderType() {
+        select(orderTypeBy);
+    }
+
 
     public void selectPaymentType(String paymentType) {
         select(paymentTypeBy, paymentType);
+    }
+
+    public void selectPaymentType() {
+        select(paymentTypeBy);
     }
 
     public void inputOocSource(String oocSource) {

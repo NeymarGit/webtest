@@ -1,4 +1,4 @@
-package com.test.webauto.Util;
+package com.test.webauto.util;
 
 import com.test.webauto.constant.Constant;
 import org.openqa.selenium.WebDriver;
