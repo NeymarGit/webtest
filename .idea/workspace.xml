@@ -9,23 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="切换店铺优化">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/TestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/common/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/common/BaseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/common/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/IndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/JenkinsIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/PacsIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/PacsIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/Case.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/LoginCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BaseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BaseCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/IndexPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +83,30 @@
       <recent name="C:\IDEA\Neymar\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateSoCase.createSo">
+  <component name="RunManager" selected="TestNG.CreateSoCase (1)">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateSoCase (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Neymar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.webauto.testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
+      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.CreateSoCase" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -148,42 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateSoCase.loginSucess" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.webauto.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.CreateSoCase" />
-      <option name="METHOD_NAME" value="loginSucess" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginCase (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.webauto.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.LoginCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Neymar" />
       <extension name="coverage">
         <pattern>
@@ -255,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateSoCase (1)" />
         <item itemvalue="TestNG.CreateSoCase.createSo" />
         <item itemvalue="TestNG.CreateSoCase" />
         <item itemvalue="TestNG.LoginCase.loginSucess" />
         <item itemvalue="TestNG.LoginCase (1)" />
-        <item itemvalue="TestNG.CreateSoCase.loginSucess" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +288,7 @@
       <workItem from="1609483129555" duration="15995000" />
       <workItem from="1609570817887" duration="3760000" />
       <workItem from="1609577485534" duration="4568000" />
-      <workItem from="1609639775315" duration="404000" />
+      <workItem from="1609639775315" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Web自动化第一次提交">
       <created>1608727588607</created>
@@ -359,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609484528336</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="切换店铺优化">
+      <created>1609640262602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609640262602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,10 +446,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="529" y="90" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609577455825" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609484530470">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609640265606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609484530470" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609640265606" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

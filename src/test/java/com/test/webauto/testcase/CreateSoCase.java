@@ -7,10 +7,8 @@ import com.test.webauto.pageobject.CreateSoPage;
 import com.test.webauto.pageobject.LoginPage;
 import com.test.webauto.pageobject.PacsIndexPage;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class CreateSoCase extends BaseCase {
@@ -20,11 +18,11 @@ public class CreateSoCase extends BaseCase {
     @BeforeClass
     public void open() {
         driver = Driver.open(Constant.DEFULT_BROWSE);
+        driver.manage().window().maximize();
         driver.get(Constant.PAC_URL);
 
     }
 
-    //
     @Test(priority = 1) // 设置运行优先级，默认为0优先跑
     public void createSo() throws InterruptedException {
         // 登录页面
