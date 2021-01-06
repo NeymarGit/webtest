@@ -5,9 +5,7 @@ import com.test.addaccount.constant.Constant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import javax.swing.plaf.PanelUI;
-
-public class AddUserPage extends BasePage {
+public class UacAddUserPage extends BasePage {
 
     // µÇÂ¼Ãû
     private By loginNameBy = By.id("loginName");
@@ -35,7 +33,7 @@ public class AddUserPage extends BasePage {
 
 
 
-    public AddUserPage(WebDriver driver) {
+    public UacAddUserPage(WebDriver driver) {
         super(driver);
     }
 
@@ -45,16 +43,16 @@ public class AddUserPage extends BasePage {
     public void inputUserName(String userName){
         input(userNameBy,userName);
     }
-    public void inputJobNumber(){
-        input(jobNumberBy,"5208");
+    public void inputJobNumber(String jobNumber){
+        input(jobNumberBy,jobNumber);
     }
 
-    public void inputPassword(){
-        input(passwordBy, Constant.PASSWORD);
+    public void inputPassword(String password){
+        input(passwordBy, password);
     }
 
-    public void inputRePassword(){
-        input(rePasswordBy,Constant.PASSWORD);
+    public void inputRePassword(String rePassword){
+        input(rePasswordBy,rePassword);
     }
 
     public void inputEmail(String email){

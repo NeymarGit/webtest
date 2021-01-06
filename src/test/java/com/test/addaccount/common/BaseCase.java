@@ -12,7 +12,7 @@ public class BaseCase {
 
     @BeforeClass
     public void open() {
-        driver = Driver.open(Constant.DEFULT_BROWSE);
+        driver = Driver.open(Constant.DEFAULT_BROWSE);
         driver.manage().window().maximize();
     }
 
