@@ -11,19 +11,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="登录UAC成功！！">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacUserBaseInfoCreatePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacLoginPage.java" afterDir="false" />
+    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="PAC创建账号">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsIndexPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/common/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/common/BaseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/AddUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacAddUserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="JavaeeView">
     <option name="frameworksView" value="false" />
@@ -117,7 +111,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Neymar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
+      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateAccount.createAccount (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Neymar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
+      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
+      <option name="METHOD_NAME" value="createAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccount.createAccount (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Neymar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
+      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
+      <option name="METHOD_NAME" value="createAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccount.createAccount (3)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Neymar" />
       <extension name="coverage">
         <pattern>
@@ -153,41 +200,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateSoCase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.webauto.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.CreateSoCase" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateSoCase.createSo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.webauto.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.CreateSoCase" />
-      <option name="METHOD_NAME" value="createSo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LoginCase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Neymar" />
       <extension name="coverage">
@@ -205,31 +217,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginCase.loginFail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.webauto.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.LoginCase" />
-      <option name="METHOD_NAME" value="loginFail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CreateAccount.createAccount" />
+        <item itemvalue="TestNG.CreateAccount" />
+        <item itemvalue="TestNG.CreateAccount.createAccount (3)" />
+        <item itemvalue="TestNG.CreateAccount.createAccount (2)" />
         <item itemvalue="TestNG.CreateAccount.createAccount (1)" />
-        <item itemvalue="TestNG.CreateSoCase.createSo" />
-        <item itemvalue="TestNG.CreateSoCase" />
-        <item itemvalue="TestNG.LoginCase.loginFail" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609649067241</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="PAC创建账号">
+      <created>1609892760597</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1609892760597</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,13 +401,14 @@
     <MESSAGE value="切换店铺优化" />
     <MESSAGE value="创单成功！！！" />
     <MESSAGE value="登录UAC成功！！" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录UAC成功！！" />
+    <MESSAGE value="PAC创建账号" />
+    <option name="LAST_COMMIT_MESSAGE" value="PAC创建账号" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="694" y="343" key="#Notifications" timestamp="1608726221504">
+    <state x="694" y="343" key="#Notifications" timestamp="1609940051329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="694" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1608726221504" />
+    <state x="694" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1609940051329" />
     <state x="713" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608727842863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -443,22 +445,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608726623660" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609864421390">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609947143430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609864421390" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609864421390">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609947143430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609864421390" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609864421390">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609947143430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609864421390" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609864421390">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609947143430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609864421390" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608462464646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -479,10 +481,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="529" y="90" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609577455825" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609892731407">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609892761942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609892731407" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609892761942" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -495,6 +497,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="643" y="198" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608043342776" />
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609940023023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609940023023" />
     <state x="502" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608131528682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
