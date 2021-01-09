@@ -28,7 +28,7 @@ public  class Driver {
     // ¹Ø±Õä¯ÀÀÆ÷
     public static void close(WebDriver driver) {
         try {
-            Thread.sleep(300000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -16,8 +16,8 @@ public class TomsUserBaseInfoEditPage extends BasePage {
     // 查询按钮
     private By queryBtnBy = By.id("create");
 
-    // 勾选框
-    private By checkBoxBy = By.id("jqg_tbl-userlist_22467");
+    // 选择用户
+    private By chooseUserBy = By.id("tbl-userlist");
 
     // 修改按钮
     private By modifyBy = By.id("modifyUser");
@@ -36,7 +36,7 @@ public class TomsUserBaseInfoEditPage extends BasePage {
     private By addRoleBtnBy = By.xpath("//*[text()='新增角色']");
 
     // 是否默认单选框
-    private By isDefaultBy = By.xpath("//*[@name='isDefault']");
+    private By isDefaultBy = By.id("isDefinexxx");
 
 
     // 修改用户按钮
@@ -57,8 +57,8 @@ public class TomsUserBaseInfoEditPage extends BasePage {
     public void clickQueryBtn(){
         click(queryBtnBy);
     }
-    public void clickCheckBox(){
-        click(checkBoxBy);
+    public void chooseUser(){
+        click(chooseUserBy);
     }
     public void clickModifyBtn(){
         click(modifyBy);

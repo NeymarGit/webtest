@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 public class ElementLocationXPath {
     public static void main(String[] args) {
         // 打开浏览器
-        WebDriver driver = Driver.open("chrom");
+        WebDriver driver = Driver.open("chrome");
 
         driver.get("http://localhost:8080/jenkins/login");
         // 绝对路径定位并点击

@@ -28,6 +28,9 @@ public class PacsIndexPage extends BasePage {
     // 用户基本信息-创建
     private By userBaseInfoCreateBy = By.xpath("//*[@id='left-menu']/div[2]/ul/li[2]/a");
 
+    // 用户基本信息-编辑
+    private By userBaseInfoEditBy = By.xpath("//*[@id='left-menu']/div[2]/ul/li[3]/a");
+
 
     // 退出登录
     private By exitBy = By.id("exit");
@@ -71,6 +74,10 @@ public class PacsIndexPage extends BasePage {
     // 点击用户基本信息-创建
     public void clickUserBaseInfoCreate() {
         click(userBaseInfoCreateBy);
+    }
+    // 点击用户基本信息-创建
+    public void clickUserBaseInfoEdit() {
+        click(userBaseInfoEditBy);
     }
 
     // 退出登录

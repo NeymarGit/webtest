@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class WebDriverAPI {
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver = Driver.open("chrom");
+        WebDriver driver = Driver.open("chrome");
         // 隐式等待，在超时时间内一直等待，直到找到元素或者超时,findElement和findElements都会加上等待时间
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

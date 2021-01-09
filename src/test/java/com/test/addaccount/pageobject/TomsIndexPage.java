@@ -29,7 +29,7 @@ public class TomsIndexPage extends BasePage {
     private By systemBy = By.xpath("//a[@acode='系统']");
 
     // 用户基本信息-编辑
-    private By userBaseInfoEditBy = By.xpath("//*[@id='ui-accordion-left-menu-panel-0']/ul/li[3]");
+    private By userBaseInfoEditBy = By.xpath("//div[@id='ui-accordion-left-menu-panel-0']/ul/li[3]");
 
 
     // 退出登录

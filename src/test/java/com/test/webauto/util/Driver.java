@@ -12,7 +12,7 @@ public  class Driver {
     public static WebDriver open(String browserType) {
         // 如果传入的是谷歌浏览器 ，则打开谷歌浏览器
         if (browserType.equalsIgnoreCase(Constant.DEFULT_BROWSE)) {
-            System.setProperty(Constant.CHROM_DRIVER_KEY, Constant.CHROM_DRIVER_VALUE);
+            System.setProperty(Constant.CHROME_DRIVER_KEY, Constant.CHROME_DRIVER_VALUE);
             return new ChromeDriver();
         }
         if (browserType.equalsIgnoreCase(Constant.FIREFOX_BROWSE)) {

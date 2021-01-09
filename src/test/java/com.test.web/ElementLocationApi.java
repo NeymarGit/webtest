@@ -11,7 +11,7 @@ import java.util.List;
 public class ElementLocationApi {
     public static void main(String[] args) {
         // 打开浏览器
-        WebDriver driver = Driver.open("chrom");
+        WebDriver driver = Driver.open("FIREFOX");
         // 访问百度
         driver.get("http://www.baidu.com");
         // 定位到输入框元素

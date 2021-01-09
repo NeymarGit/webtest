@@ -14,7 +14,7 @@ import java.util.Set;
 
 public class SpecialElement {
     public static void main(String[] args) throws InterruptedException {
-        WebDriver driver = Driver.open("chrom");
+        WebDriver driver = Driver.open("chrome");
 //        select(driver);
 //        iframe(driver);
         windowsChange(driver);

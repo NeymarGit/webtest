@@ -10,7 +10,7 @@ import java.io.IOException;
 // ÌØÊâÔªËØ²Ù×÷
 public class SpecialElement02 {
     public static void main(String[] args) throws Exception {
-        WebDriver driver = Driver.open("chrom");
+        WebDriver driver = Driver.open("chrome");
 //        jsOperation(driver);
         fileUpload(driver);
         Driver.close(driver);

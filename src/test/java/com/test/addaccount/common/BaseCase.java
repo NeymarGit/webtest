@@ -7,12 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import java.util.Date;
+
 public class BaseCase {
     protected WebDriver driver;
 
     @BeforeClass
     public void open() {
-        driver = Driver.open(Constant.DEFAULT_BROWSE);
+        driver = Driver.open(Constant.FIREFOX_BROWSE);
         driver.manage().window().maximize();
     }
 

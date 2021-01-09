@@ -10,8 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Driver {
     public static WebDriver open(String browserType) {
         // 如果传入的是谷歌浏览器 ，则打开谷歌浏览器
-        if (browserType.equalsIgnoreCase("chrom")) {
-            System.setProperty(Constant.CHROM_DRIVER_KEY, Constant.CHROM_DRIVER_VALUE);
+        if (browserType.equalsIgnoreCase("chrome")) {
+            System.setProperty(Constant.CHROME_DRIVER_KEY, Constant.CHROME_DRIVER_VALUE);
             return new ChromeDriver();
         }
         if (browserType.equalsIgnoreCase("firefox")) {

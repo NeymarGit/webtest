@@ -5,15 +5,15 @@ public class Constant {
     public static final String DEFULT_BROWSE = "chrome";
     public static final String FIREFOX_BROWSE = "firefox";
 
-    public static final String CHROM_DRIVER_KEY = "webdriver.chrome.driver";
-    public static final String CHROM_DRIVER_VALUE = "src/test/resources/chromedriver.exe";
+    public static final String CHROME_DRIVER_KEY = "webdriver.chrome.driver";
+    public static final String CHROME_DRIVER_VALUE = "src/test/resources/chromedriver.exe";
 
     public static final String FIREFOX_KEY = "webdriver.firefox.bin";
     public static final String FIREFOX_VALUE = "F:/Firefox/firefox.exe";
 
 
-    public static final String FIREFOX_DRIVER_KEY = "src/test/resources/chromedriver.exe";
-    public static final String FIREFOX_DRIVER_VALUE = "src/test/resources/chromedriver.exe";
+    public static final String FIREFOX_DRIVER_KEY = "webdriver.gecko.driver";
+    public static final String FIREFOX_DRIVER_VALUE = "src/test/resources/geckodriver.exe";
 
     public static final String BASE_URL = "http://account-test.baozun.cn/person/login";
     public static final String PAC_URL = BASE_URL + "?appkey=PAC-TEST";
