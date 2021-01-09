@@ -26,44 +26,47 @@ public class UacAddUserPage extends BasePage {
     private By authorBy = By.xpath("//*[@class='btn btn-success btn-sm']");
     // 勾选TOMS框
     private By tomsTestBy = By.xpath("//*[@id='86,OMS-TEST,OMS-TEST,1']//div");
+    private By tomsUatBy = By.xpath("//*[@id='297,OMS-ECS-UAT,OMS-ECS-UAT,30']//div");
     // 勾选PACS框
     private By pacsTestBy = By.xpath("//*[@id='89,PAC-TEST,PAC-TEST,1000']//div");
+    private By pacsUatBy = By.xpath("//*[@id='32,PAC-UAT,PAC-UAT,555']//div");
     // 保存权限按钮
     private By saveAuthorBy = By.id("saveCommonUser");
-
 
 
     public UacAddUserPage(WebDriver driver) {
         super(driver);
     }
 
-    public void inputLoginName(String loginName){
-        input(loginNameBy,loginName);
-    }
-    public void inputUserName(String userName){
-        input(userNameBy,userName);
-    }
-    public void inputJobNumber(String jobNumber){
-        input(jobNumberBy,jobNumber);
+    public void inputLoginName(String loginName) {
+        input(loginNameBy, loginName);
     }
 
-    public void inputPassword(String password){
+    public void inputUserName(String userName) {
+        input(userNameBy, userName);
+    }
+
+    public void inputJobNumber(String jobNumber) {
+        input(jobNumberBy, jobNumber);
+    }
+
+    public void inputPassword(String password) {
         input(passwordBy, password);
     }
 
-    public void inputRePassword(String rePassword){
-        input(rePasswordBy,rePassword);
+    public void inputRePassword(String rePassword) {
+        input(rePasswordBy, rePassword);
     }
 
-    public void inputEmail(String email){
-        input(emailBy,email);
+    public void inputEmail(String email) {
+        input(emailBy, email);
     }
 
-    public void clickSaveBtn(){
+    public void clickSaveBtn() {
         click(saveBtnBy);
     }
 
-    public void clickAuthor(){
+    public void clickAuthor() {
         click(authorBy);
     }
 
@@ -71,11 +74,19 @@ public class UacAddUserPage extends BasePage {
         rollClick(tomsTestBy);
     }
 
-    public void clickPacs(){
+    public void clickTomsUat() {
+        rollClick(tomsUatBy);
+    }
+
+    public void clickPacs() {
         rollClick(pacsTestBy);
     }
 
-    public void clickSaveAuthor(){
+    public void clickPacsUat() {
+        rollClick(pacsUatBy);
+    }
+
+    public void clickSaveAuthor() {
         click(saveAuthorBy);
     }
 

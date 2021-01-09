@@ -9,9 +9,13 @@ import org.openqa.selenium.WebDriver;
  */
 public class UacAddUser {
 
-    public void addUacUser(WebDriver driver) throws InterruptedException {
+    public void addUacUser(WebDriver driver,String environment) throws InterruptedException {
         // 登录UAC
-        driver.get(Constant.UAC_URL);
+        if(environment.equalsIgnoreCase("uat")){
+            driver.get(Constant.UAC_URL_UAT);
+        }else {
+            driver.get(Constant.UAC_URL);
+        }
         UacLoginPage uacLoginPage = new UacLoginPage(driver);
         uacLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);
         uacLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);
@@ -36,8 +40,14 @@ public class UacAddUser {
 
         // 添加应用权限
         uacAddUserPage.clickAuthor();
-        uacAddUserPage.clickToms();
-        uacAddUserPage.clickPacs();
+        if(environment.equalsIgnoreCase("uat")){
+            uacAddUserPage.clickTomsUat();
+            uacAddUserPage.clickPacsUat();
+        }else {
+            uacAddUserPage.clickToms();
+            uacAddUserPage.clickPacs();
+        }
+
         uacAddUserPage.clickSaveAuthor();
     }
 

@@ -11,9 +11,13 @@ import org.openqa.selenium.WebDriver;
  */
 public class PacAddRole {
 
-    public void addPacRole(WebDriver driver) throws InterruptedException {
+    public void addPacRole(WebDriver driver,String environment) throws InterruptedException {
         // µÇÂ¼PAC
-        driver.get(Constant.PAC_URL);
+        if(environment.equalsIgnoreCase("uat")){
+            driver.get(Constant.PAC_URL_UAT);
+        }else {
+            driver.get(Constant.PAC_URL);
+        }
         UacLoginPage pacLoginPage = new UacLoginPage(driver);
         pacLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);
         pacLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);

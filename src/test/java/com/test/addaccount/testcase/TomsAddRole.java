@@ -10,9 +10,13 @@ import org.openqa.selenium.WebDriver;
  */
 public class TomsAddRole {
 
-    public void addTomsRole(WebDriver driver) throws InterruptedException {
+    public void addTomsRole(WebDriver driver,String environment) throws InterruptedException {
         // µÇÂ¼TOMS
-        driver.get(Constant.TOMS_URL);
+        if(environment.equalsIgnoreCase("uat")){
+            driver.get(Constant.TOMS_URL_UAT);
+        }else {
+            driver.get(Constant.TOMS_URL);
+        }
         UacLoginPage tomsLoginPage = new UacLoginPage(driver);
         tomsLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);
         tomsLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);
@@ -32,6 +36,7 @@ public class TomsAddRole {
         // Ìí¼ÓÈ¨ÏÞ
         TomsUserBaseInfoEditPage tomsEdit = new TomsUserBaseInfoEditPage(driver);
         tomsEdit.inputLoginName(Constant.CREATE_LOGIN_NAME);
+        Thread.sleep(1000);
         tomsEdit.clickQueryBtn();
         tomsEdit.chooseUser();
         tomsEdit.clickModifyBtn();
@@ -40,9 +45,10 @@ public class TomsAddRole {
         tomsEdit.clickModifyUserBtn();
     }
 
-    public void addRole(TomsUserBaseInfoEditPage tomsEdit,String ouType,String ouId,String roleId,Boolean isDefault){
+    public void addRole(TomsUserBaseInfoEditPage tomsEdit,String ouType,String ouId,String roleId,Boolean isDefault) throws InterruptedException {
 
         tomsEdit.selectAddOuType(ouType);
+        Thread.sleep(1000);
         tomsEdit.selectOperationUnitId(ouId);
         tomsEdit.selectRoleId(roleId);
         if(isDefault){

@@ -11,35 +11,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="TOMS创建账号权限">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsUserBaseInfoEditPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/PacAddRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/PacAddUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/TomsAddRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/UacAddUser.java" afterDir="false" />
+    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="SIT环境加账号自动化(基于FireFox浏览器)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/ElementLocationApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/ElementLocationApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/ElementLocationXPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/ElementLocationXPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/SpecialElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/SpecialElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/SpecialElement02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/SpecialElement02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com.test.web/WebDriverAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test.web/WebDriverAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/common/BaseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/common/BaseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacAddUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacAddUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacIndexPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/util/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/util/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationXPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationXPath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement02.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/WebDriverAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/WebDriverAPI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/PacAddRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/PacAddRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/TomsAddRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/TomsAddRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/UacAddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/UacAddUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/Driver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +101,7 @@
       <recent name="C:\IDEA\Neymar\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreateAccount.createAccount">
+  <component name="RunManager" selected="TestNG.CreateAccount.createAccount (2)">
     <configuration name="ElementLocationApi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.web.ElementLocationApi" />
       <module name="Neymar" />
@@ -154,6 +137,24 @@
       <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
       <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccount.createAccount (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Neymar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
+      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
+      <option name="METHOD_NAME" value="createAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -232,49 +233,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateAccount.createAccount" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
-      <option name="METHOD_NAME" value="createAccount" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateAccount.createAccount" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Neymar" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
-      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
-      <option name="METHOD_NAME" value="createAccount" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateAccount.createAccount (2)" />
         <item itemvalue="TestNG.CreateAccount.createAccount" />
-        <item itemvalue="Application.ElementLocationApi" />
-        <item itemvalue="TestNG.CreateAccount.createAccount (4)" />
+        <item itemvalue="TestNG.CreateAccount.createAccount (1)" />
         <item itemvalue="TestNG.CreateAccount" />
-        <item itemvalue="TestNG.CreateAccount.createAccount (3)" />
+        <item itemvalue="Application.ElementLocationApi" />
       </list>
     </recent_temporary>
   </component>
@@ -341,7 +306,7 @@
       <workItem from="1609652499667" duration="4963000" />
       <workItem from="1610181506793" duration="299000" />
       <workItem from="1610181824922" duration="5224000" />
-      <workItem from="1610187153110" duration="7442000" />
+      <workItem from="1610187153110" duration="14512000" />
     </task>
     <task id="LOCAL-00001" summary="Web自动化第一次提交">
       <created>1608727588607</created>
@@ -413,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609978988587</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="SIT环境加账号自动化(基于FireFox浏览器)">
+      <created>1610195009465</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610195009465</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +436,8 @@
     <MESSAGE value="登录UAC成功！！" />
     <MESSAGE value="PAC创建账号" />
     <MESSAGE value="TOMS创建账号权限" />
-    <option name="LAST_COMMIT_MESSAGE" value="TOMS创建账号权限" />
+    <MESSAGE value="SIT环境加账号自动化(基于FireFox浏览器)" />
+    <option name="LAST_COMMIT_MESSAGE" value="SIT环境加账号自动化(基于FireFox浏览器)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="343" key="#Notifications" timestamp="1609940051329">
@@ -507,22 +480,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="837" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608726623660" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610194644738">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610201467590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610194644738" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610194644738">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610201467590" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610201467590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610194644738" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610194644738">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610201467590" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610201467590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610194644738" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610194644738">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610201467590" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610201467590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610194644738" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610201467590" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608462464646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -543,10 +516,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="529" y="90" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610192480314" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609978990117">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610195014645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609978990117" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610195014645" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

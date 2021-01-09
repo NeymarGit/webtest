@@ -1,0 +1,75 @@
+GET https://www.baidu.com/?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062749-1.200.html
+
+###
+
+GET https://www.baidu.com/?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062749.200.html
+
+###
+
+GET https://www.baidu.com/?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062703-1.200.html
+
+###
+
+GET https://www.baidu.com/?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062703.200.html
+
+###
+
+GET https://www.baidu.com/resources?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062633-1.404.html
+
+###
+
+GET https://www.baidu.com/resources?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062633.404.html
+
+###
+
+POST https://www.baidu.com/resources?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062626-1.404.html
+
+###
+
+POST https://www.baidu.com/resources?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062626.404.html
+
+###
+
+POST http://www.baidu.com/resources?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062620-1.404.html
+
+###
+
+POST http://www.baidu.com/resources?=
+Cache-Control: no-cache
+
+<> 2021-01-03T062620.404.html
+
+###
+
+POST http://localhost:8080/resources?=
+Cache-Control: no-cache
+
+###
+
