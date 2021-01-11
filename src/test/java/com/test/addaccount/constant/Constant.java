@@ -36,5 +36,8 @@ public class Constant {
     public static final String CREATE_JOB_NUMBER = "5208";
     public static final String CREATE_EMAIL = "yanghe.liu@baozun.com";
 
+    // »·¾³
+    public static final String SIT_ENVIRONMENT = "SIT";
+    public static final String UAT_ENVIRONMENT = "UAT";
 
 }

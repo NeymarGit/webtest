@@ -5,7 +5,7 @@ import com.test.addaccount.pageobject.*;
 import org.openqa.selenium.WebDriver;
 
 /**
- *PACS添加用户权限
+ * UAC添加用户权限
  */
 public class UacAddUser {
 
