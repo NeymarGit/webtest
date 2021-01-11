@@ -12,7 +12,7 @@ public class Constant {
     public static final String CHROME_DRIVER_VALUE = "src/test/resources/chromedriver.exe";
 
     public static final String FIREFOX_KEY = "webdriver.firefox.bin";
-    public static final String FIREFOX_VALUE = "F:/Firefox/firefox.exe";
+    public static final String FIREFOX_VALUE = "C:\\Program Files\\Mozilla Firefox\\firefox.exe";
 
     public static final String FIREFOX_DRIVER_KEY = "webdriver.gecko.driver";
     public static final String FIREFOX_DRIVER_VALUE = "src/test/resources/geckodriver.exe";
@@ -32,9 +32,9 @@ public class Constant {
     public static final String DEFAULT_PASSWORD = "qqqq1111";
 
     // 需要添加账号的信息
-    public static final String CREATE_LOGIN_NAME = "Auto1005";
+    public static final String CREATE_LOGIN_NAME = "zhiyu.cao";
     public static final String CREATE_JOB_NUMBER = "5208";
-    public static final String CREATE_EMAIL = "yanghe.liu@baozun.com";
+    public static final String CREATE_EMAIL = "zhiyu.cao@baozun.com";
 
     // 环境
     public static final String SIT_ENVIRONMENT = "SIT";

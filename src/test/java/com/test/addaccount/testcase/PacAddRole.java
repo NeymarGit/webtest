@@ -37,6 +37,7 @@ public class PacAddRole {
         // 用户基本信息-编辑页面
         PacsUserBaseInfoEditPage pacsEditPage = new PacsUserBaseInfoEditPage(driver);
         pacsEditPage.inputLoginName(Constant.CREATE_LOGIN_NAME);
+        Thread.sleep(1000);
         pacsEditPage.clickQueryBtn();
         pacsEditPage.clickCheckBox();
         pacsEditPage.clickModifyBtn();

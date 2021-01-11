@@ -16,8 +16,8 @@ public class CreateAccount extends BaseCase {
         PacAddRole pacAddRole = new PacAddRole();
         pacAddRole.addPacRole(driver,environment);
 
-        TomsAddRole tomsAddRole = new TomsAddRole();
-        tomsAddRole.addTomsRole(driver,environment);
+//        TomsAddRole tomsAddRole = new TomsAddRole();
+//        tomsAddRole.addTomsRole(driver,environment);
 
     }
 
