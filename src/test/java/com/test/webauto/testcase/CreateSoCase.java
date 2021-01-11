@@ -25,7 +25,7 @@ public class CreateSoCase extends BaseCase {
         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
         // 切换店铺权限
         pacsIndexPage.clickRole();
-        pacsIndexPage.chooseShop("PAC回归测试店铺0");
+        pacsIndexPage.chooseShop(Constant.SHOP_NAME);
         pacsIndexPage.clickDetermine();
         Thread.sleep(1000);
 
@@ -68,18 +68,18 @@ public class CreateSoCase extends BaseCase {
 
         // 订单明细行信息
         createSoPage.clickOrderLine();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < Constant.ORDER_LINE; i++) {
             createSoPage.clickAddLine();
             if(i == 0){
-                createSoPage.inputSkuCode1("HGCSZYWJ01");
+                createSoPage.inputSkuCode1(Constant.SKU_CODE1);
                 createSoPage.inputActualPrice1(150.00);
                 createSoPage.inputRequestQty1(2);
             }else if(i == 1){
-                createSoPage.inputSkuCode2("HGCSZYWJ02");
+                createSoPage.inputSkuCode2(Constant.SKU_CODE2);
                 createSoPage.inputActualPrice2(150.00);
                 createSoPage.inputRequestQty2(2);
             }else if(i == 2){
-                createSoPage.inputSkuCode3("HGCSZYTS01");
+                createSoPage.inputSkuCode3(Constant.SKU_CODE3);
                 createSoPage.inputActualPrice3(150.00);
                 createSoPage.inputRequestQty3(2);
             }
