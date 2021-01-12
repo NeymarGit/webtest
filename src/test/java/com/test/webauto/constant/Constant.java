@@ -19,16 +19,22 @@ public class Constant {
     public static final String PAC_URL = BASE_URL + "PAC-TEST";
     public static final String TOMS_URL = BASE_URL + "OMS-TEST";
 
+    public static final String BASE_URL_UAT = "https://ecs-uat-account.baozun.com/person/login?appkey=";
+    public static final String UAC_URL_UAT = BASE_URL_UAT + "platform-console-uat";
+    public static final String PAC_URL_UAT = BASE_URL_UAT + "PAC-UAT";
+    public static final String TOMS_URL_UAT = BASE_URL_UAT + "OMS-ECS-UAT";
+
+
     public static final String LOGIN_NAME = "liuyanghe";
     public static final String PASSWORD = "qqqq1111";
 
     // 店铺名称
-    public static final String SHOP_NAME = "Gucci官方商城";
+    public static final String SHOP_NAME = "PAC回归测试店铺1";
     // 订单行数
-    public static final int ORDER_LINE = 1;
+    public static final int ORDER_LINE = 2;
     // sku_code
-    public static final String SKU_CODE1 = "539051_1000_6106";
-    public static final String SKU_CODE2 = "539051_1000_6106";
+    public static final String SKU_CODE1 = "HGCSZYTS01";
+    public static final String SKU_CODE2 = "HGCSZYTS02";
     public static final String SKU_CODE3 = "539051_1000_6106";
 
 }

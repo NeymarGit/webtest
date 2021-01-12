@@ -18,7 +18,7 @@ public class CreateSoPage extends PacsIndexPage {
 
     // 客户查询
     private By queryBy = By.id("btnK3CustomerQuery");
-    private By chooseCustomerBy = By.id("797215");
+    private By chooseCustomerBy = By.id("tbl_k3_customer_query_dialog");
     private By confirmBy = By.id("btnK3CustomerQueryConfirm");
 
     // 收货人
