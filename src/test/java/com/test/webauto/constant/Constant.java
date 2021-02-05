@@ -25,16 +25,16 @@ public class Constant {
     public static final String TOMS_URL_UAT = BASE_URL_UAT + "OMS-ECS-UAT";
 
 
-    public static final String LOGIN_NAME = "liuyanghe";
+    public static final String LOGIN_NAME = "liuyanghe1";
     public static final String PASSWORD = "qqqq1111";
 
     // µÍ∆Ã√˚≥∆
-    public static final String SHOP_NAME = "PACªÿπÈ≤‚ ‘µÍ∆Ã1";
+    public static final String SHOP_NAME = "–°∫Ï È∆ÏΩ¢µÍ";
     // ∂©µ•–– ˝
     public static final int ORDER_LINE = 2;
     // sku_code
-    public static final String SKU_CODE1 = "HGCSZYTS01";
-    public static final String SKU_CODE2 = "HGCSZYTS02";
+    public static final String SKU_CODE1 = "170878-NVAQ-7";
+    public static final String SKU_CODE2 = "SMAWS18D520-BLAKL";
     public static final String SKU_CODE3 = "539051_1000_6106";
 
 }

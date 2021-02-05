@@ -31,7 +31,7 @@ public class BasePage {
         return element;
     }
 
-    // 等待5s元素是否点击
+    // 等待5s元素是否可点击
     public WebElement elementClickable(By by) {
         WebElement element = null;
         try {

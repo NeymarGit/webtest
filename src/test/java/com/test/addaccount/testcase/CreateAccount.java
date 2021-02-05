@@ -9,13 +9,14 @@ public class CreateAccount extends BaseCase {
 
     @Test
     public void createAccount() throws InterruptedException {
-        String environment = Constant.SIT_ENVIRONMENT;
+        String environment = Constant.UAT_ENVIRONMENT;
+
         UacAddUser uacAddUser = new UacAddUser();
         uacAddUser.addUacUser(driver,environment);
 
-        PacAddRole pacAddRole = new PacAddRole();
-        pacAddRole.addPacRole(driver,environment);
-
+//        PacAddRole pacAddRole = new PacAddRole();
+//        pacAddRole.addPacRole(driver,environment);
+//
 //        TomsAddRole tomsAddRole = new TomsAddRole();
 //        tomsAddRole.addTomsRole(driver,environment);
 

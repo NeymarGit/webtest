@@ -25,11 +25,19 @@ public class UacAddUserPage extends BasePage {
     // 新增应用权限
     private By authorBy = By.xpath("//*[@class='btn btn-success btn-sm']");
     // 勾选TOMS框
-    private By tomsTestBy = By.xpath("//*[@id='86,OMS-TEST,OMS-TEST,1']//div");
+    private By tomsTestBy = By.xpath("//*[@id='86,OMS-TEST,OMS-TEST,300']//div");
     private By tomsUatBy = By.xpath("//*[@id='297,OMS-ECS-UAT,OMS-ECS-UAT,30']//div");
     // 勾选PACS框
     private By pacsTestBy = By.xpath("//*[@id='89,PAC-TEST,PAC-TEST,1000']//div");
     private By pacsUatBy = By.xpath("//*[@id='32,PAC-UAT,PAC-UAT,555']//div");
+
+    // 判断TOMS和PACS是否存在
+    private By tomsTestIsExistBy = By.id("86,300,OMS-TEST,OMS-TEST");
+    private By tomsUatIsExistBy = By.id("297,30,OMS-ECS-UAT,OMS-ECS-UAT");
+    private By pacsTestIsExistBy = By.id("89,1000,PAC-TEST,PAC-TEST");
+    private By pacsUatIsExistBy = By.id("32,555,PAC-UAT,PAC-UAT");
+
+
     // 保存权限按钮
     private By saveAuthorBy = By.id("saveCommonUser");
 
@@ -85,6 +93,21 @@ public class UacAddUserPage extends BasePage {
     public void clickPacsUat() {
         rollClick(pacsUatBy);
     }
+
+    public boolean tomsTestIsEsist(){
+        return isDisplay(tomsTestIsExistBy);
+    }
+    public boolean tomsUatIsEsist(){
+        return isDisplay(tomsUatIsExistBy);
+    }
+    public boolean pacsTestIsEsist(){
+        return isDisplay(pacsTestIsExistBy);
+    }
+    public boolean pacsUatIsEsist(){
+        return isDisplay(pacsUatIsExistBy);
+    }
+
+
 
     public void clickSaveAuthor() {
         click(saveAuthorBy);

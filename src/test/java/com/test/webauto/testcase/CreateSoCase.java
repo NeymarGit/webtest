@@ -13,7 +13,7 @@ public class CreateSoCase extends BaseCase {
     @Test(priority = 1) // 设置运行优先级，默认为0优先跑
     public void createSo() throws InterruptedException {
 
-        driver.get(Constant.PAC_URL_UAT);
+        driver.get(Constant.PAC_URL);
         driver.manage().window().maximize();
 
         // 登录页面
@@ -21,6 +21,7 @@ public class CreateSoCase extends BaseCase {
         loginPage.inputLoginName(Constant.LOGIN_NAME);
         loginPage.inputPwd(Constant.PASSWORD);
         loginPage.clickLoginBtn();
+
 
         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
         // 切换店铺权限
@@ -60,7 +61,8 @@ public class CreateSoCase extends BaseCase {
 
         // 订单支付和发票信息
         createSoPage.clickPaymentAndInvoice();
-        createSoPage.selectOrderType("宝尊订单");
+        createSoPage.selectOrderType("小红书订单");
+        Thread.sleep(500);
         createSoPage.selectPaymentType("支付宝");
         String value = String.valueOf(System.currentTimeMillis());
         createSoPage.inputOocSource(value);
