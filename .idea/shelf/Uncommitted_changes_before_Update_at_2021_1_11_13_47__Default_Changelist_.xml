@@ -1,0 +1,69 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]" date="1610344068877" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/1/11 13:47 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/ElementLocationXPath.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/ElementLocationXPath.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/ElementLocationXPath.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/WebDriverAPI.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/WebDriverAPI.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/WebDriverAPI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/Driver.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/Driver.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Driver.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/PacsIndexPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/SpecialElement.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/SpecialElement.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/SpecialElement.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/SpecialElement02.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/SpecialElement02.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/SpecialElement02.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/Util/Driver.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/Util/Driver.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Driver1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/Constant.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/Constant.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Constant.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/common/BasePage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/common/BasePage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/BasePage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/constant/Constant.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/constant/Constant.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Constant1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/ElementLocationApi.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/ElementLocationApi.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/ElementLocationApi.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/common/BaseCase.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/common/BaseCase.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/BaseCase.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/pageobject/LoginPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/pageobject/LoginPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/LoginPage.class" />
+  </binary>
+</changelist>
