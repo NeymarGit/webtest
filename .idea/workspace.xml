@@ -11,50 +11,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="创建账号-支持现有账号加权限">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/BaseCase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/BasePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Constant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Constant1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Driver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/Driver1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/ElementLocationApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/ElementLocationXPath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/LoginPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/PacsIndexPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/SpecialElement.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/SpecialElement02.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/WebDriverAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_47__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/BaseCase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/BasePage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/Constant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/Constant1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/Driver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/Driver1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/ElementLocationApi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/ElementLocationXPath.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/LoginPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/PacsIndexPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/SpecialElement.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/SpecialElement02.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/WebDriverAPI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_13_48__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_14_09_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_1_11_14_09__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/PacAddRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/PacAddUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/TomsAddRole.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/UacAddUser.class" afterDir="false" />
+    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="创建账号-URL变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacAddUserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacAddUserPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacIndexPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/CreateAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/PacAddRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/PacAddRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/PacAddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/PacAddUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/TomsAddRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/TomsAddRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/UacAddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/UacAddUser.class" afterDir="false" />
     </list>
     <list id="88e21010-66fa-4ef8-a417-7d92273d9d47" name="Revert: " comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -421,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612513431543</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="创建账号-URL变更">
+      <created>1615860182856</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1615860182856</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +456,8 @@
     <MESSAGE value="加账号优化" />
     <MESSAGE value="UAT环境的创单" />
     <MESSAGE value="创建账号-支持现有账号加权限" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建账号-支持现有账号加权限" />
+    <MESSAGE value="创建账号-URL变更" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建账号-URL变更" />
   </component>
   <component name="WindowStateProjectService">
     <state x="694" y="343" key="#Notifications" timestamp="1609940051329">
@@ -518,30 +492,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="324" height="442" key="Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1608738629814" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612345442179">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1615860217813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612345442179" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1615860217813" />
     <state x="864" y="266" width="559" height="490" key="FileChooserDialogImpl" timestamp="1610701548506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="864" y="266" width="559" height="490" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610701548506" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615859589045">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1615883722699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615859589045" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615859589045">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1615883722699" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1615883722699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615859589045" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615859589045">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1615883722699" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1615883722699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615859589045" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615859589045">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1615883722699" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1615883722699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615859589045" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1615883722699" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608462464646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -566,10 +540,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1612346523651" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612513435383">
+    <state x="552" y="253" width="1038" height="561" key="Vcs.Push.Dialog.v2" timestamp="1615860224485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612513435383" />
+    <state x="552" y="253" width="1038" height="561" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1615860224485" />
     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
