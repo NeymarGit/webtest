@@ -1,0 +1,404 @@
+Index: src/test/java/com/test/addaccount/constant/Constant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.addaccount.constant;\r\n\r\n/**\r\n * 常量配置\r\n */\r\n\r\npublic class Constant {\r\n    public static final String DEFAULT_BROWSE = \"chrome\";\r\n    public static final String FIREFOX_BROWSE = \"firefox\";\r\n\r\n    public static final String CHROME_DRIVER_KEY = \"webdriver.chrome.driver\";\r\n    public static final String CHROME_DRIVER_VALUE = \"src/test/resources/chromedriver.exe\";\r\n\r\n    public static final String FIREFOX_KEY = \"webdriver.firefox.bin\";\r\n    public static final String FIREFOX_VALUE = \"C:/Program Files/Mozilla Firefox/firefox.exe\";\r\n\r\n    public static final String FIREFOX_DRIVER_KEY = \"webdriver.gecko.driver\";\r\n    public static final String FIREFOX_DRIVER_VALUE = \"src/test/resources/geckodriver.exe\";\r\n\r\n\r\n    public static final String UAC_URL = \"http://test.account.baozun.cn/person/login?appkey=PC_DEV\";\r\n    public static final String BASE_URL = \"http://account-test.baozun.cn/person/login?appkey=\";\r\n    public static final String PAC_URL = BASE_URL + \"PAC-TEST\";\r\n    public static final String TOMS_URL = BASE_URL + \"OMS-TEST\";\r\n\r\n    public static final String BASE_URL_UAT = \"https://ecs-uat-account.baozun.com/person/login?appkey=\";\r\n    public static final String UAC_URL_UAT = BASE_URL_UAT + \"platform-console-uat\";\r\n    public static final String PAC_URL_UAT = BASE_URL_UAT + \"PAC-UAT\";\r\n    public static final String TOMS_URL_UAT = BASE_URL_UAT + \"OMS-ECS-UAT\";\r\n\r\n    public static final String DEFAULT_LOGIN_NAME = \"liuyanghe\";\r\n    public static final String DEFAULT_PASSWORD = \"qqqq1111\";\r\n\r\n    // 需要添加账号的信息\r\n    public static final String CREATE_LOGIN_NAME = \"zhiyu.cao\";\r\n    public static final String CREATE_JOB_NUMBER = \"5208\";\r\n    public static final String CREATE_EMAIL = \"zhiyu.cao@baozun.com\";\r\n\r\n    // 环境\r\n    public static final String SIT_ENVIRONMENT = \"SIT\";\r\n    public static final String UAT_ENVIRONMENT = \"UAT\";\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+diff --git a/src/test/java/com/test/addaccount/constant/Constant.java b/src/test/java/com/test/addaccount/constant/Constant.java
+--- a/src/test/java/com/test/addaccount/constant/Constant.java	
++++ b/src/test/java/com/test/addaccount/constant/Constant.java	
+@@ -12,7 +12,7 @@
+     public static final String CHROME_DRIVER_VALUE = "src/test/resources/chromedriver.exe";
+ 
+     public static final String FIREFOX_KEY = "webdriver.firefox.bin";
+-    public static final String FIREFOX_VALUE = "C:/Program Files/Mozilla Firefox/firefox.exe";
++    public static final String FIREFOX_VALUE = "F:/Firefox/firefox.exe";
+ 
+     public static final String FIREFOX_DRIVER_KEY = "webdriver.gecko.driver";
+     public static final String FIREFOX_DRIVER_VALUE = "src/test/resources/geckodriver.exe";
+@@ -32,9 +32,9 @@
+     public static final String DEFAULT_PASSWORD = "qqqq1111";
+ 
+     // 需要添加账号的信息
+-    public static final String CREATE_LOGIN_NAME = "zhiyu.cao";
++    public static final String CREATE_LOGIN_NAME = "ali.pan";
+     public static final String CREATE_JOB_NUMBER = "5208";
+-    public static final String CREATE_EMAIL = "zhiyu.cao@baozun.com";
++    public static final String CREATE_EMAIL = "ali.pan@baozun.com";
+ 
+     // 环境
+     public static final String SIT_ENVIRONMENT = "SIT";
+Index: Neymar.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Neymar.iml b/Neymar.iml
+deleted file mode 100644
+--- a/Neymar.iml	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>D:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\ElementLocationXPath.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\webauto\\pageobject\\LoginPage.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\webauto\\testcase\\Case.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\webauto\\driver\\Driver.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\webauto\\pageobject\\IndexPage.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\webauto\\constant\\Constant.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\webauto\\pageobject\\BasePage.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\SpecialElement02.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\WebDriverAPI.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\Driver.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\Constant.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\ElementLocationApi.java\r\nD:\\IDEA\\Neymar\\src\\test\\java\\com.test.web\\SpecialElement.java\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+--- a/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst	
++++ b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst	
+@@ -1,13 +1,35 @@
+-D:\IDEA\Neymar\src\test\java\com.test.web\ElementLocationXPath.java
+-D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\LoginPage.java
+-D:\IDEA\Neymar\src\test\java\com\test\webauto\testcase\Case.java
+-D:\IDEA\Neymar\src\test\java\com\test\webauto\driver\Driver.java
+-D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\IndexPage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\constant\Constant.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\UacLoginPage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\UacAddUserPage.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\common\BaseCase.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\testcase\UacAddUser.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\testcase\PacAddUser.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\testcase\LoginCase.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\common\BaseCase.java
+ D:\IDEA\Neymar\src\test\java\com\test\webauto\constant\Constant.java
+-D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\BasePage.java
+ D:\IDEA\Neymar\src\test\java\com.test.web\SpecialElement02.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\common\BasePage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\PacsUserBaseInfoEditPage.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\testcase\TestCase.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\testcase\CreateSoCase.java
++D:\IDEA\Neymar\src\test\java\com.test.web\Constant.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\PacUserBaseInfoCreatePage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\testcase\CreateAccount.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\PacsIndexPage.java
++D:\IDEA\Neymar\src\test\java\com.test.web\ElementLocationXPath.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\LoginPage.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\PacsIndexPage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\common\BasePage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\UacIndexPage.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\CreateSoPage.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\pageobject\JenkinsIndexPage.java
++D:\IDEA\Neymar\src\test\java\com\test\webauto\util\Driver.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\TomsIndexPage.java
+ D:\IDEA\Neymar\src\test\java\com.test.web\WebDriverAPI.java
+ D:\IDEA\Neymar\src\test\java\com.test.web\Driver.java
+-D:\IDEA\Neymar\src\test\java\com.test.web\Constant.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\testcase\PacAddRole.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\util\Driver.java
+ D:\IDEA\Neymar\src\test\java\com.test.web\ElementLocationApi.java
+ D:\IDEA\Neymar\src\test\java\com.test.web\SpecialElement.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\pageobject\TomsUserBaseInfoEditPage.java
++D:\IDEA\Neymar\src\test\java\com\test\addaccount\testcase\TomsAddRole.java
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AnalysisUIOptions\">\r\n    <option name=\"GROUP_BY_SEVERITY\" value=\"true\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"BranchesTreeState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"31e4888d-9839-477e-86d7-5f845587ce82\" name=\"Default Changelist\" comment=\"加账号优化\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/com/test/addaccount/util/Driver.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/com/test/addaccount/util/Driver.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/CreateSoPage.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/CreateSoPage.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/CreateSoCase.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/CreateSoCase.class\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"88e21010-66fa-4ef8-a417-7d92273d9d47\" name=\"Revert: \" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Pull.Settings\">\r\n    <option name=\"BRANCH\" value=\"master\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"JavaeeView\">\r\n    <option name=\"frameworksView\" value=\"false\" />\r\n    <option name=\"showModules\" value=\"false\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"localRepository\" value=\"D:\\Maven\\LocalFactory\" />\r\n        <option name=\"mavenHome\" value=\"D:\\Maven\\apache-maven-3.6.3\" />\r\n        <option name=\"userSettingsFile\" value=\"D:\\Maven\\apache-maven-3.6.3\\conf\\settings.xml\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1eFNpEARx5sPmauwCs1TepE0sf2\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"foldersAlwaysOnTop\" value=\"false\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"extract.method.default.visibility\" value=\"private\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Project\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.2\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settingsdialog.IDE.editor.colors.Java\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\IDEA\\Neymar\\src\\test\\resources\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.test\" />\r\n      <recent name=\"come.test\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.test.addaccount.testcase\" />\r\n      <recent name=\"com.test.addaccount.pageobject\" />\r\n      <recent name=\"com.test.addaccount.constant.Util\" />\r\n      <recent name=\"com.test.addaccount.constant\" />\r\n      <recent name=\"com.test.webauto.constant\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\addaccount\\pageobject\" />\r\n      <recent name=\"D:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\addaccount\" />\r\n      <recent name=\"C:\\IDEA\\Neymar\\src\\test\\resources\" />\r\n      <recent name=\"C:\\IDEA\\Neymar\\src\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.CreateSoCase.createSo\">\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount (1)\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount (2)\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateSoCase.createSo\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.webauto.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.webauto.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.webauto.testcase.CreateSoCase\" />\r\n      <option name=\"METHOD_NAME\" value=\"createSo\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.CreateSoCase.createSo\" />\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount\" />\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount (2)\" />\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount (1)\" />\r\n        <item itemvalue=\"TestNG.CreateAccount\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"31e4888d-9839-477e-86d7-5f845587ce82\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1593913561879</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1593913561879</updated>\r\n      <workItem from=\"1593913563588\" duration=\"5706000\" />\r\n      <workItem from=\"1593945451659\" duration=\"112000\" />\r\n      <workItem from=\"1593946318200\" duration=\"10000\" />\r\n      <workItem from=\"1594941566007\" duration=\"20000\" />\r\n      <workItem from=\"1595123035065\" duration=\"294000\" />\r\n      <workItem from=\"1599490951080\" duration=\"9000\" />\r\n      <workItem from=\"1603608756246\" duration=\"6361000\" />\r\n      <workItem from=\"1603636560615\" duration=\"600000\" />\r\n      <workItem from=\"1604497960955\" duration=\"8298000\" />\r\n      <workItem from=\"1604577644704\" duration=\"29113000\" />\r\n      <workItem from=\"1604846780468\" duration=\"12266000\" />\r\n      <workItem from=\"1605189130080\" duration=\"622000\" />\r\n      <workItem from=\"1605190091211\" duration=\"176000\" />\r\n      <workItem from=\"1605190287451\" duration=\"119000\" />\r\n      <workItem from=\"1605190591159\" duration=\"587000\" />\r\n      <workItem from=\"1605191388134\" duration=\"15000\" />\r\n      <workItem from=\"1605191443621\" duration=\"114000\" />\r\n      <workItem from=\"1605191571329\" duration=\"24000\" />\r\n      <workItem from=\"1605191606646\" duration=\"5580000\" />\r\n      <workItem from=\"1605226175455\" duration=\"972000\" />\r\n      <workItem from=\"1605267490079\" duration=\"612000\" />\r\n      <workItem from=\"1605269922225\" duration=\"2424000\" />\r\n      <workItem from=\"1605351700336\" duration=\"2134000\" />\r\n      <workItem from=\"1605405349686\" duration=\"594000\" />\r\n      <workItem from=\"1605412713817\" duration=\"1008000\" />\r\n      <workItem from=\"1605708476857\" duration=\"2158000\" />\r\n      <workItem from=\"1606060901525\" duration=\"4000\" />\r\n      <workItem from=\"1606622454343\" duration=\"115000\" />\r\n      <workItem from=\"1606622850539\" duration=\"805000\" />\r\n      <workItem from=\"1606623685896\" duration=\"643000\" />\r\n      <workItem from=\"1606636491339\" duration=\"1000\" />\r\n      <workItem from=\"1607008581954\" duration=\"604000\" />\r\n      <workItem from=\"1607150393123\" duration=\"3000\" />\r\n      <workItem from=\"1607179089191\" duration=\"3000\" />\r\n      <workItem from=\"1607440321130\" duration=\"311000\" />\r\n      <workItem from=\"1607825118510\" duration=\"53807000\" />\r\n      <workItem from=\"1608690705299\" duration=\"1781000\" />\r\n      <workItem from=\"1608724303146\" duration=\"27531000\" />\r\n      <workItem from=\"1609339590013\" duration=\"162000\" />\r\n      <workItem from=\"1609339789424\" duration=\"1001000\" />\r\n      <workItem from=\"1609340823725\" duration=\"24000\" />\r\n      <workItem from=\"1609340898843\" duration=\"11000\" />\r\n      <workItem from=\"1609341525793\" duration=\"682000\" />\r\n      <workItem from=\"1609342245273\" duration=\"64000\" />\r\n      <workItem from=\"1609342329143\" duration=\"1845000\" />\r\n      <workItem from=\"1609483129555\" duration=\"15995000\" />\r\n      <workItem from=\"1609570817887\" duration=\"3760000\" />\r\n      <workItem from=\"1609577485534\" duration=\"4568000\" />\r\n      <workItem from=\"1609639775315\" duration=\"10734000\" />\r\n      <workItem from=\"1609652499667\" duration=\"4963000\" />\r\n      <workItem from=\"1610181506793\" duration=\"299000\" />\r\n      <workItem from=\"1610181824922\" duration=\"5224000\" />\r\n      <workItem from=\"1610187153110\" duration=\"14512000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Web自动化第一次提交\">\r\n      <created>1608727588607</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1608727588607</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"定位到创单页面\">\r\n      <created>1608738552503</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1608738552503</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"定位到创单页面\">\r\n      <created>1608738616243</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1608738616243</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"切换店铺优化\">\r\n      <created>1609484136579</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609484136579</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"切换店铺优化\">\r\n      <created>1609484528336</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609484528336</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"切换店铺优化\">\r\n      <created>1609640262602</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609640262602</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"创单成功！！！\">\r\n      <created>1609640781132</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609640781132</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"登录UAC成功！！\">\r\n      <created>1609649067241</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609649067241</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"PAC创建账号\">\r\n      <created>1609892760597</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609892760597</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"TOMS创建账号权限\">\r\n      <created>1609978988587</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609978988587</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"SIT环境加账号自动化(基于FireFox浏览器)\">\r\n      <created>1610195009465</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1610195009465</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"创建账号环境选择优化\">\r\n      <created>1610350814216</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1610350814216</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"创单优化\">\r\n      <created>1610352632148</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1610352632148</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"加账号优化\">\r\n      <created>1610356368125</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1610356368125</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"15\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"1\">\r\n          <value>\r\n            <State>\r\n              <option name=\"SHOW_ONLY_AFFECTED_CHANGES\" value=\"true\" />\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"HEAD\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                  <entry key=\"roots\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"$PROJECT_DIR$\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"2\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Web自动化第一次提交\" />\r\n    <MESSAGE value=\"定位到创单页面\" />\r\n    <MESSAGE value=\"切换店铺优化\" />\r\n    <MESSAGE value=\"创单成功！！！\" />\r\n    <MESSAGE value=\"登录UAC成功！！\" />\r\n    <MESSAGE value=\"PAC创建账号\" />\r\n    <MESSAGE value=\"TOMS创建账号权限\" />\r\n    <MESSAGE value=\"SIT环境加账号自动化(基于FireFox浏览器)\" />\r\n    <MESSAGE value=\"创建账号环境选择优化\" />\r\n    <MESSAGE value=\"创单优化\" />\r\n    <MESSAGE value=\"加账号优化\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"加账号优化\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"694\" y=\"343\" key=\"#Notifications\" timestamp=\"1609940051329\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"694\" y=\"343\" key=\"#Notifications/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609940051329\" />\r\n    <state x=\"713\" y=\"320\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1608727842863\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"713\" y=\"320\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608727842863\" />\r\n    <state x=\"765\" y=\"225\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1609859352982\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"765\" y=\"225\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609859352982\" />\r\n    <state x=\"690\" y=\"296\" key=\"#com.intellij.ide.util.PackageChooserDialog\" timestamp=\"1609858180657\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"690\" y=\"296\" key=\"#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609858180657\" />\r\n    <state x=\"736\" y=\"413\" width=\"447\" height=\"221\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" timestamp=\"1609486681227\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"736\" y=\"413\" width=\"447\" height=\"221\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609486681227\" />\r\n    <state x=\"739\" y=\"426\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages\" timestamp=\"1608452839949\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"739\" y=\"426\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608452839949\" />\r\n    <state x=\"677\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog\" timestamp=\"1609861540866\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"677\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609861540866\" />\r\n    <state width=\"324\" height=\"442\" key=\"Diff.GoToChangePopup\" timestamp=\"1608738629814\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"324\" height=\"442\" key=\"Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608738629814\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"DiffContextDialog\" timestamp=\"1608739804775\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"DiffContextDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608739804775\" />\r\n    <state x=\"837\" y=\"288\" key=\"FileChooserDialogImpl\" timestamp=\"1608726623660\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"837\" y=\"288\" key=\"FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608726623660\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1610432199790\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610432199790\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.center\" timestamp=\"1610432199790\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610432199790\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.left\" timestamp=\"1610432199790\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610432199790\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.right\" timestamp=\"1610432199790\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610432199790\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.center\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.left\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.right\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state x=\"843\" y=\"76\" width=\"998\" height=\"892\" key=\"SettingsEditor\" timestamp=\"1610348061943\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"843\" y=\"76\" width=\"998\" height=\"892\" key=\"SettingsEditor/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610348061943\" />\r\n    <state x=\"552\" y=\"253\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1610356372323\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"552\" y=\"253\" key=\"Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610356372323\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" maximized=\"true\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog\" timestamp=\"1608304357352\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" maximized=\"true\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608304357352\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"com.intellij.history.integration.ui.views.SelectionHistoryDialog\" timestamp=\"1608220848788\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608220848788\" />\r\n    <state x=\"643\" y=\"198\" key=\"com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser\" timestamp=\"1608043342776\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"643\" y=\"198\" key=\"com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608043342776\" />\r\n    <state x=\"763\" y=\"433\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1610422142544\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"763\" y=\"433\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610422142544\" />\r\n    <state x=\"502\" y=\"249\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2\" timestamp=\"1608131528682\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"502\" y=\"249\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608131528682\" />\r\n    <state x=\"690\" y=\"268\" key=\"extract.method.dialog\" timestamp=\"1608040330163\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"690\" y=\"268\" key=\"extract.method.dialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608040330163\" />\r\n    <state x=\"749\" y=\"269\" width=\"596\" height=\"594\" key=\"find.popup\" timestamp=\"1610191134141\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"749\" y=\"269\" width=\"596\" height=\"594\" key=\"find.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1610191134141\" />\r\n    <state x=\"761\" y=\"426\" key=\"git4idea.remote.GitConfigureRemotesDialog\" timestamp=\"1608727046276\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"761\" y=\"426\" key=\"git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608727046276\" />\r\n    <state x=\"718\" y=\"330\" width=\"628\" height=\"548\" key=\"org.intellij.images.editor.actions.BackgroundImageDialog\" timestamp=\"1607849493122\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"718\" y=\"330\" width=\"628\" height=\"548\" key=\"org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1607849493122\" />\r\n    <state x=\"623\" y=\"225\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1608454357031\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"623\" y=\"225\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608454357031\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -13,15 +13,43 @@
+   <component name="ChangeListManager">
+     <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="加账号优化">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Neymar.iml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/Neymar.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Neymar.war" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/common/BaseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/common/BaseCase.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/common/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/common/BasePage.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/PacUserBaseInfoCreatePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/PacUserBaseInfoCreatePage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/PacsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/PacsIndexPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/PacsUserBaseInfoEditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/PacsUserBaseInfoEditPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/TomsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/TomsIndexPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacAddUserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacAddUserPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacIndexPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacLoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/pageobject/UacLoginPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/CreateAccount.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/util/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/util/Driver.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/Constant.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/Driver.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationApi.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationXPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationXPath.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement02.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/WebDriverAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/WebDriverAPI.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BaseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BaseCase.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/CreateSoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/CreateSoPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/JenkinsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/JenkinsIndexPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/LoginPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/CreateSoCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/CreateSoCase.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/LoginCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/LoginCase.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/TestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/TestCase.class" afterDir="false" />
+     </list>
+     <list id="88e21010-66fa-4ef8-a417-7d92273d9d47" name="Revert: " comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+@@ -65,18 +93,19 @@
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="DatabaseDriversLRU" value="oracle" />
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+     <property name="extract.method.default.visibility" value="private" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Messi/src/test" />
+     <property name="nodejs_package_manager_path" value="npm" />
+-    <property name="project.structure.last.edited" value="Project" />
++    <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.15" />
+     <property name="project.structure.side.proportion" value="0.2" />
+-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
++    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+@@ -100,18 +129,7 @@
+       <recent name="C:\IDEA\Neymar\src" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.CreateSoCase.createSo">
+-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+-      <option name="arquillianRunConfiguration">
+-        <value>
+-          <option name="containerStateName" value="" />
+-        </value>
+-      </option>
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
++  <component name="RunManager" selected="TestNG.CreateAccount.createAccount">
+     <configuration name="CreateAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Neymar" />
+       <extension name="coverage">
+@@ -203,11 +221,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.CreateSoCase.createSo" />
+         <item itemvalue="TestNG.CreateAccount.createAccount" />
++        <item itemvalue="TestNG.CreateAccount" />
++        <item itemvalue="TestNG.CreateSoCase.createSo" />
+         <item itemvalue="TestNG.CreateAccount.createAccount (2)" />
+         <item itemvalue="TestNG.CreateAccount.createAccount (1)" />
+-        <item itemvalue="TestNG.CreateAccount" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -275,6 +293,11 @@
+       <workItem from="1610181506793" duration="299000" />
+       <workItem from="1610181824922" duration="5224000" />
+       <workItem from="1610187153110" duration="14512000" />
++      <workItem from="1611379982933" duration="195000" />
++      <workItem from="1611380256902" duration="168000" />
++      <workItem from="1611381662181" duration="892000" />
++      <workItem from="1611641371892" duration="1298000" />
++      <workItem from="1612180616685" duration="1321000" />
+     </task>
+     <task id="LOCAL-00001" summary="Web自动化第一次提交">
+       <created>1608727588607</created>
+@@ -435,128 +458,6 @@
+     <MESSAGE value="创单优化" />
+     <MESSAGE value="加账号优化" />
+     <option name="LAST_COMMIT_MESSAGE" value="加账号优化" />
+-  </component>
+-  <component name="WindowStateProjectService">
+-    <state x="694" y="343" key="#Notifications" timestamp="1609940051329">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="694" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1609940051329" />
+-    <state x="713" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608727842863">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="713" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608727842863" />
+-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1609859352982">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609859352982" />
+-    <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1609858180657">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="690" y="296" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609858180657" />
+-    <state x="736" y="413" width="447" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609486681227">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="736" y="413" width="447" height="221" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609486681227" />
+-    <state x="739" y="426" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1608452839949">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="739" y="426" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1608452839949" />
+-    <state x="677" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609861540866">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="677" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609861540866" />
+-    <state width="324" height="442" key="Diff.GoToChangePopup" timestamp="1608738629814">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="324" height="442" key="Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1608738629814" />
+-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1608739804775">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608739804775" />
+-    <state x="837" y="288" key="FileChooserDialogImpl" timestamp="1608726623660">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="837" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608726623660" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610432199790">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610432199790" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610432199790">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610432199790" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610432199790">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610432199790" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610432199790">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610432199790" />
+-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608462464646">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608462464646" />
+-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1608462464646">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608462464646" />
+-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1608462464646">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608462464646" />
+-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1608462464646">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608462464646" />
+-    <state x="843" y="76" width="998" height="892" key="SettingsEditor" timestamp="1610348061943">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="843" y="76" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610348061943" />
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610356372323">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610356372323" />
+-    <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608304357352" />
+-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1608220848788">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608220848788" />
+-    <state x="643" y="198" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1608043342776">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="643" y="198" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608043342776" />
+-    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610422142544">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610422142544" />
+-    <state x="502" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608131528682">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="502" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1608131528682" />
+-    <state x="690" y="268" key="extract.method.dialog" timestamp="1608040330163">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="690" y="268" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608040330163" />
+-    <state x="749" y="269" width="596" height="594" key="find.popup" timestamp="1610191134141">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="749" y="269" width="596" height="594" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610191134141" />
+-    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1608727046276">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608727046276" />
+-    <state x="718" y="330" width="628" height="548" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1607849493122">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="718" y="330" width="628" height="548" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607849493122" />
+-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608454357031">
+-      <screen x="0" y="0" width="1920" height="1040" />
+-    </state>
+-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608454357031" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
+Index: target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>com\\test\\webauto\\driver\\Driver.class\r\ncom\\test\\web\\ElementLocationApi.class\r\ncom\\test\\webauto\\pageobject\\BasePage.class\r\ncom\\test\\webauto\\testcase\\Case.class\r\ncom\\test\\web\\ElementLocationXPath.class\r\ncom\\test\\web\\SpecialElement.class\r\ncom\\test\\web\\SpecialElement02.class\r\ncom\\test\\webauto\\pageobject\\LoginPage.class\r\ncom\\test\\web\\Driver.class\r\ncom\\test\\webauto\\pageobject\\IndexPage.class\r\ncom\\test\\webauto\\constant\\Constant.class\r\ncom\\test\\web\\Constant.class\r\ncom\\test\\web\\WebDriverAPI.class\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+--- a/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst	
++++ b/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst	
+@@ -1,13 +1,35 @@
+-com\test\webauto\driver\Driver.class
++com\test\addaccount\testcase\TomsAddRole.class
+ com\test\web\ElementLocationApi.class
+-com\test\webauto\pageobject\BasePage.class
+-com\test\webauto\testcase\Case.class
++com\test\webauto\testcase\TestCase.class
++com\test\webauto\pageobject\JenkinsIndexPage.class
++com\test\addaccount\constant\Constant.class
++com\test\addaccount\testcase\CreateAccount.class
+ com\test\web\ElementLocationXPath.class
+ com\test\web\SpecialElement.class
+-com\test\web\SpecialElement02.class
++com\test\addaccount\testcase\PacAddUser.class
++com\test\addaccount\common\BasePage.class
+ com\test\webauto\pageobject\LoginPage.class
+-com\test\web\Driver.class
+-com\test\webauto\pageobject\IndexPage.class
++com\test\addaccount\testcase\PacAddRole.class
++com\test\addaccount\testcase\UacAddUser.class
++com\test\webauto\common\BaseCase.class
++com\test\webauto\pageobject\CreateSoPage.class
+ com\test\webauto\constant\Constant.class
++com\test\webauto\util\Driver.class
++com\test\addaccount\pageobject\TomsUserBaseInfoEditPage.class
+ com\test\web\Constant.class
++com\test\addaccount\pageobject\PacsUserBaseInfoEditPage.class
++com\test\webauto\common\BasePage.class
++com\test\addaccount\common\BaseCase.class
++com\test\webauto\pageobject\PacsIndexPage.class
++com\test\addaccount\pageobject\UacLoginPage.class
++com\test\addaccount\pageobject\UacIndexPage.class
++com\test\addaccount\pageobject\PacUserBaseInfoCreatePage.class
++com\test\addaccount\pageobject\TomsIndexPage.class
++com\test\addaccount\pageobject\PacsIndexPage.class
++com\test\web\SpecialElement02.class
++com\test\webauto\testcase\LoginCase.class
++com\test\webauto\testcase\CreateSoCase.class
++com\test\addaccount\pageobject\UacAddUserPage.class
++com\test\web\Driver.class
++com\test\addaccount\util\Driver.class
+ com\test\web\WebDriverAPI.class

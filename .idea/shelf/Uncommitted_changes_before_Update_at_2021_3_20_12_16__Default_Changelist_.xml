@@ -1,0 +1,94 @@
+<changelist name="Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]" date="1616213787733" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2021/3/20 12:16 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/constant/Constant.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/constant/Constant.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/Constant.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/TomsIndexPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/TomsIndexPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/TomsIndexPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/Neymar.war" />
+    <option name="AFTER_PATH" value="target/Neymar.war" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/Neymar.war" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/pageobject/CreateSoPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/pageobject/CreateSoPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/CreateSoPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/pageobject/JenkinsIndexPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/pageobject/JenkinsIndexPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/JenkinsIndexPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/UacIndexPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/UacIndexPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/UacIndexPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/SpecialElement.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/SpecialElement.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/SpecialElement.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/ElementLocationApi.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/ElementLocationApi.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/ElementLocationApi.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/PacsUserBaseInfoEditPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/PacsUserBaseInfoEditPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/PacsUserBaseInfoEditPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/common/BasePage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/common/BasePage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/BasePage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/TomsUserBaseInfoEditPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/web/WebDriverAPI.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/web/WebDriverAPI.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/WebDriverAPI.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/PacUserBaseInfoCreatePage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/PacUserBaseInfoCreatePage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/PacUserBaseInfoCreatePage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/UacAddUserPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/UacAddUserPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/UacAddUserPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/PacsIndexPage.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/common/BasePage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/common/BasePage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/BasePage1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/addaccount/pageobject/PacsIndexPage.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/addaccount/pageobject/PacsIndexPage.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/PacsIndexPage1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/test-classes/com/test/webauto/testcase/CreateSoCase.class" />
+    <option name="AFTER_PATH" value="target/test-classes/com/test/webauto/testcase/CreateSoCase.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_3_20_12_16_[Default_Changelist]/CreateSoCase.class" />
+  </binary>
+</changelist>
