@@ -19,9 +19,8 @@ public class Constant {
 
 
     public static final String UAC_URL = "http://test.account.baozun.cn/person/login?appkey=PC_DEV";
-    public static final String BASE_URL = "http://account-test.baozun.cn/person/login?appkey=";
-    public static final String PAC_URL = BASE_URL + "PAC-TEST";
-    public static final String TOMS_URL = BASE_URL + "OMS-TEST";
+    public static final String PAC_URL = "https://test-pacs.baozun.com/oms/main.do";
+    public static final String TOMS_URL = "https://test-toms.baozun.cn/tmall/main.do";
 
     public static final String BASE_URL_UAT = "https://ecs-uat-account.baozun.com/person/login?appkey=";
     public static final String UAC_URL_UAT = BASE_URL_UAT + "platform-console-uat";
