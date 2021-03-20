@@ -31,7 +31,7 @@ public class Constant {
     public static final String DEFAULT_PASSWORD = "qqqq1111";
 
     // 需要添加账号的信息
-    public static final String CREATE_LOGIN_NAME = "csh6638";
+    public static final String CREATE_LOGIN_NAME = "zhezhouxu_new";
     public static final String CREATE_JOB_NUMBER = "5208";
     public static final String CREATE_EMAIL = "yang.yang013340@baozun.com";
 
