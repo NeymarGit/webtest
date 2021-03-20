@@ -1,0 +1,147 @@
+Index: src/test/java/com/test/addaccount/constant/Constant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.addaccount.constant;\r\n\r\n// 常量配置\r\npublic class Constant {\r\n    public static final String DEFAULT_BROWSE = \"chrome\";\r\n    public static final String FIREFOX_BROWSE = \"firefox\";\r\n\r\n    public static final String CHROME_DRIVER_KEY = \"webdriver.chrome.driver\";\r\n    public static final String CHROME_DRIVER_VALUE = \"src/test/resources/chromedriver.exe\";\r\n\r\n    public static final String FIREFOX_KEY = \"webdriver.firefox.bin\";\r\n    public static final String FIREFOX_VALUE = \"F:/Firefox/firefox.exe\";\r\n\r\n    public static final String FIREFOX_DRIVER_KEY = \"src/test/resources/chromedriver.exe\";\r\n    public static final String FIREFOX_DRIVER_VALUE = \"src/test/resources/chromedriver.exe\";\r\n\r\n\r\n    public static final String UAC_URL = \"http://test.account.baozun.cn/person/login?appkey=PC_DEV\";\r\n    public static final String BASE_URL = \"http://account-test.baozun.cn/person/login\";\r\n    public static final String PAC_URL = BASE_URL + \"?appkey=PAC-TEST\";\r\n    public static final String TOMS_URL =  BASE_URL + \"?appkey=OMS-TEST\";\r\n\r\n    public static final String DEFAULT_LOGIN_NAME = \"liuyanghe\";\r\n    public static final String DEFAULT_PASSWORD = \"qqqq1111\";\r\n\r\n    // 需要添加账号的信息\r\n    public static final String CREATE_LOGIN_NAME = \"Auto1002\";\r\n    public static final String CREATE_JOB_NUMBER = \"5208\";\r\n    public static final String CREATE_EMAIL = \"yanghe.liu@baozun.com\";\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/addaccount/constant/Constant.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/addaccount/constant/Constant.java	(date 1610344069164)
+@@ -24,7 +24,7 @@
+     public static final String DEFAULT_PASSWORD = "qqqq1111";
+ 
+     // 需要添加账号的信息
+-    public static final String CREATE_LOGIN_NAME = "Auto1002";
++    public static final String CREATE_LOGIN_NAME = "Auto1001";
+     public static final String CREATE_JOB_NUMBER = "5208";
+     public static final String CREATE_EMAIL = "yanghe.liu@baozun.com";
+ 
+Index: src/test/java/com/test/addaccount/testcase/CreateAccount.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.addaccount.testcase;\r\n\r\nimport com.test.addaccount.common.BaseCase;\r\nimport com.test.addaccount.constant.Constant;\r\nimport com.test.addaccount.pageobject.*;\r\nimport org.openqa.selenium.Alert;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class CreateAccount extends BaseCase {\r\n//    public WebDriver driver = null;\r\n\r\n\r\n    @Test\r\n    public void createAccount() throws InterruptedException {\r\n  /*      // 访问UAC登录页面\r\n        driver.get(Constant.UAC_URL);\r\n\r\n        // 登录\r\n        UacLoginPage uacLoginPage = new UacLoginPage(driver);\r\n        uacLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);\r\n        uacLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);\r\n        uacLoginPage.clickLoginBtn();\r\n\r\n        // UAC首页\r\n        UacIndexPage uacIndexPage = new UacIndexPage(driver);\r\n        uacIndexPage.clickUserManage();\r\n        uacIndexPage.clickSubUserManage();\r\n        uacIndexPage.clickAddUser();\r\n\r\n        // 添加用户页面\r\n        UacAddUserPage uacAddUserPage = new UacAddUserPage(driver);\r\n        uacAddUserPage.inputLoginName(Constant.CREATE_LOGIN_NAME);\r\n        uacAddUserPage.inputUserName(Constant.CREATE_LOGIN_NAME);\r\n        uacAddUserPage.inputJobNumber(Constant.CREATE_JOB_NUMBER);\r\n        uacAddUserPage.inputPassword(Constant.DEFAULT_PASSWORD);\r\n        uacAddUserPage.inputRePassword(Constant.DEFAULT_PASSWORD);\r\n\r\n        uacAddUserPage.inputEmail(Constant.CREATE_EMAIL);\r\n        uacAddUserPage.clickSaveBtn();\r\n        Thread.sleep(1000);\r\n        uacAddUserPage.clickAuthor();\r\n        uacAddUserPage.clickToms();\r\n        uacAddUserPage.clickPacs();\r\n        uacAddUserPage.clickSaveAuthor();\r\n/*\r\n        // 切换到PAC创用户页面\r\n        driver.get(Constant.PAC_URL);\r\n        UacLoginPage pacLoginPage = new UacLoginPage(driver);\r\n        pacLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);\r\n        pacLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);\r\n        pacLoginPage.clickLoginBtn();\r\n        PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);\r\n        pacsIndexPage.clickRole();\r\n        pacsIndexPage.chooseAdmin();\r\n        pacsIndexPage.clickDetermine();\r\n        pacsIndexPage.clickMenu();\r\n        pacsIndexPage.clickSystem();\r\n        pacsIndexPage.clickUserBaseInfoCreate();\r\n\r\n        driver.switchTo().frame(1);\r\n        PacUserBaseInfoCreatePage baseInfoCreatePage = new PacUserBaseInfoCreatePage(driver);\r\n        baseInfoCreatePage.inputLoginName(Constant.CREATE_LOGIN_NAME);\r\n        baseInfoCreatePage.inputPassword(Constant.DEFAULT_PASSWORD);\r\n        baseInfoCreatePage.inputUserName(Constant.CREATE_LOGIN_NAME);\r\n        baseInfoCreatePage.inputJobNumber(Constant.CREATE_JOB_NUMBER);\r\n        baseInfoCreatePage.inputEmail(Constant.CREATE_EMAIL);\r\n        baseInfoCreatePage.selectAddOuType(\"集团\");\r\n        Thread.sleep(500);\r\n        baseInfoCreatePage.selectOperationUnitId(\"宝尊电商集团\");\r\n        baseInfoCreatePage.selectRoleId(\"Administrator\");\r\n        baseInfoCreatePage.clickAddRoleBtn();\r\n        baseInfoCreatePage.clickIsDefault();\r\n        baseInfoCreatePage.clickCreateUserBtn();\r\n        Alert alert = driver.switchTo().alert();\r\n        alert.accept();\r\n*/\r\n        // 切换到TOMS编辑用户页面\r\n        driver.get(Constant.TOMS_URL);\r\n        UacLoginPage tomsLoginPage = new UacLoginPage(driver);\r\n        tomsLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);\r\n        tomsLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);\r\n        tomsLoginPage.clickLoginBtn();\r\n        TomsIndexPage tomsIndexPage = new TomsIndexPage(driver);\r\n        tomsIndexPage.clickRole();\r\n        tomsIndexPage.chooseAdmin();\r\n        tomsIndexPage.clickDetermine();\r\n        tomsIndexPage.clickMenu();\r\n        tomsIndexPage.clickSystem();\r\n        tomsIndexPage.clickUserBaseInfoEdit();\r\n\r\n        driver.switchTo().frame(1);\r\n        TomsUserBaseInfoEditPage tomsUserBaseInfoEditPage = new TomsUserBaseInfoEditPage(driver);\r\n        tomsUserBaseInfoEditPage.inputLoginName(Constant.CREATE_LOGIN_NAME);\r\n        tomsUserBaseInfoEditPage.clickQueryBtn();\r\n        tomsUserBaseInfoEditPage.clickCheckBox();\r\n        tomsUserBaseInfoEditPage.clickModifyBtn();\r\n        driver.switchTo().frame(1);\r\n        tomsUserBaseInfoEditPage.selectAddOuType(\"集团\");\r\n        tomsUserBaseInfoEditPage.selectOperationUnitId(\"宝尊电商集团\");\r\n        tomsUserBaseInfoEditPage.selectRoleId(\"Administrator\");\r\n        tomsUserBaseInfoEditPage.clickAddRoleBtn();\r\n        tomsUserBaseInfoEditPage.clickIsDefault();\r\n        tomsUserBaseInfoEditPage.clickModifyUserBtn();\r\n\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/addaccount/testcase/CreateAccount.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/addaccount/testcase/CreateAccount.java	(date 1610344069166)
+@@ -12,7 +12,7 @@
+ 
+     @Test
+     public void createAccount() throws InterruptedException {
+-  /*      // 访问UAC登录页面
++     // 访问UAC登录页面
+         driver.get(Constant.UAC_URL);
+ 
+         // 登录
+Index: Neymar.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Neymar.iml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ Neymar.iml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>com.test.star</groupId>\r\n  <artifactId>Neymar</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n  <packaging>war</packaging>\r\n\r\n  <name>Neymar Maven Webapp</name>\r\n  <!-- FIXME change it to the project's website -->\r\n  <url>http://www.example.com</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    <maven.compiler.source>1.7</maven.compiler.source>\r\n    <maven.compiler.target>1.7</maven.compiler.target>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>4.11</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->\r\n    <dependency>\r\n      <groupId>com.alibaba</groupId>\r\n      <artifactId>fastjson</artifactId>\r\n      <version>1.2.70</version>\r\n    </dependency>\r\n\r\n    <dependency>\r\n      <groupId>org.testng</groupId>\r\n      <artifactId>testng</artifactId>\r\n      <version>6.9.10</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n\r\n    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->\r\n    <dependency>\r\n      <groupId>org.seleniumhq.selenium</groupId>\r\n      <artifactId>selenium-java</artifactId>\r\n      <version>3.141.59</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.jetbrains</groupId>\r\n      <artifactId>annotations-java5</artifactId>\r\n      <version>15.0</version>\r\n      <scope>compile</scope>\r\n    </dependency>\r\n\r\n  </dependencies>\r\n\r\n  <build>\r\n    <finalName>Neymar</finalName>\r\n    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->\r\n      <plugins>\r\n        <plugin>\r\n          <artifactId>maven-clean-plugin</artifactId>\r\n          <version>3.1.0</version>\r\n        </plugin>\r\n        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->\r\n        <plugin>\r\n          <artifactId>maven-resources-plugin</artifactId>\r\n          <version>3.0.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-compiler-plugin</artifactId>\r\n          <version>3.8.0</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-surefire-plugin</artifactId>\r\n          <version>2.22.1</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-war-plugin</artifactId>\r\n          <version>3.2.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-install-plugin</artifactId>\r\n          <version>2.5.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-deploy-plugin</artifactId>\r\n          <version>2.8.2</version>\r\n        </plugin>\r\n      </plugins>\r\n    </pluginManagement>\r\n  </build>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ pom.xml	(date 1610344069160)
+@@ -53,6 +53,14 @@
+       <scope>compile</scope>
+     </dependency>
+ 
++    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
++    <dependency>
++      <groupId>com.alibaba</groupId>
++      <artifactId>fastjson</artifactId>
++      <version>1.2.73</version>
++    </dependency>
++
++
+   </dependencies>
+ 
+   <build>
+Index: src/test/java/com/test/webauto/testcase/CreateSoCase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.webauto.testcase;\r\n\r\nimport com.test.webauto.common.BaseCase;\r\nimport com.test.webauto.constant.Constant;\r\nimport com.test.webauto.pageobject.CreateSoPage;\r\nimport com.test.webauto.pageobject.LoginPage;\r\nimport com.test.webauto.pageobject.PacsIndexPage;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class CreateSoCase extends BaseCase {\r\n\r\n\r\n    @Test(priority = 1) // 设置运行优先级，默认为0优先跑\r\n    public void createSo() throws InterruptedException {\r\n\r\n        driver.get(Constant.PAC_URL);\r\n        driver.manage().window().maximize();\r\n\r\n        // 登录页面\r\n        LoginPage loginPage = new LoginPage(driver);\r\n        loginPage.inputLoginName(Constant.LOGIN_NAME);\r\n        loginPage.inputPwd(Constant.PASSWORD);\r\n        loginPage.clickLoginBtn();\r\n\r\n        PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);\r\n        // 切换店铺权限\r\n        pacsIndexPage.clickRole();\r\n        pacsIndexPage.chooseShop(\"PAC回归测试店铺0\");\r\n        pacsIndexPage.clickDetermine();\r\n        Thread.sleep(1000);\r\n\r\n        // 找到下单页面\r\n        pacsIndexPage.clickMenu();\r\n        Thread.sleep(1000);\r\n        pacsIndexPage.clickSoManage();\r\n        Thread.sleep(1000);\r\n        pacsIndexPage.clickCreateSo();\r\n        Thread.sleep(1000);\r\n\r\n        // 切换iframe\r\n        driver.switchTo().frame(1);\r\n\r\n        // 创建订单基本信息\r\n        CreateSoPage createSoPage = new CreateSoPage(driver);\r\n        createSoPage.clickCustome();\r\n//        createSoPage.inputCustome(\"华为技术有限公司\");\r\n        createSoPage.inputCustomerCode(\"CUS000138\");\r\n        createSoPage.clickCustomerQuery();\r\n//        Thread.sleep(2000);\r\n        createSoPage.chooseCustomer();\r\n        createSoPage.clickConfirm();\r\n\r\n        createSoPage.inputReceiver(\"Neymar\");\r\n        createSoPage.inputMobile(\"18845457878\");\r\n        createSoPage.inputZipCode(\"426100\");\r\n        createSoPage.selectProvince(\"上海\");\r\n        createSoPage.selectCity(\"上海市\");\r\n        createSoPage.selectDistrict(\"徐汇区\");\r\n        createSoPage.inputAddress(\"1268号1003\");\r\n\r\n        // 订单支付和发票信息\r\n        createSoPage.clickPaymentAndInvoice();\r\n        createSoPage.selectOrderType();\r\n        createSoPage.selectPaymentType();\r\n        String value = String.valueOf(System.currentTimeMillis());\r\n        createSoPage.inputOocSource(value);\r\n        createSoPage.inputOutOrderCode(value);\r\n\r\n        // 订单明细行信息\r\n        createSoPage.clickOrderLine();\r\n        for (int i = 0; i < 3; i++) {\r\n            createSoPage.clickAddLine();\r\n            if(i == 0){\r\n                createSoPage.inputSkuCode1(\"HGCSZYWJ01\");\r\n                createSoPage.inputActualPrice1(150.00);\r\n                createSoPage.inputRequestQty1(2);\r\n            }else if(i == 1){\r\n                createSoPage.inputSkuCode2(\"HGCSZYWJ02\");\r\n                createSoPage.inputActualPrice2(150.00);\r\n                createSoPage.inputRequestQty2(2);\r\n            }else if(i == 2){\r\n                createSoPage.inputSkuCode3(\"HGCSZYTS01\");\r\n                createSoPage.inputActualPrice3(150.00);\r\n                createSoPage.inputRequestQty3(2);\r\n            }\r\n        }\r\n\r\n        createSoPage.inputTransFee(10.00);\r\n        Thread.sleep(5000);\r\n\r\n        createSoPage.clickCreateAndSubmit();\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/webauto/testcase/CreateSoCase.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/webauto/testcase/CreateSoCase.java	(date 1610344069171)
+@@ -25,7 +25,7 @@
+         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
+         // 切换店铺权限
+         pacsIndexPage.clickRole();
+-        pacsIndexPage.chooseShop("PAC回归测试店铺0");
++        pacsIndexPage.chooseShop("香港nike中国官方商城90");
+         pacsIndexPage.clickDetermine();
+         Thread.sleep(1000);
+ 
+@@ -44,7 +44,7 @@
+         CreateSoPage createSoPage = new CreateSoPage(driver);
+         createSoPage.clickCustome();
+ //        createSoPage.inputCustome("华为技术有限公司");
+-        createSoPage.inputCustomerCode("CUS000138");
++        createSoPage.inputCustomerCode("CUS000032");
+         createSoPage.clickCustomerQuery();
+ //        Thread.sleep(2000);
+         createSoPage.chooseCustomer();
+@@ -68,16 +68,16 @@
+ 
+         // 订单明细行信息
+         createSoPage.clickOrderLine();
+-        for (int i = 0; i < 3; i++) {
++        for (int i = 0; i < 2; i++) {
+             createSoPage.clickAddLine();
+             if(i == 0){
+-                createSoPage.inputSkuCode1("HGCSZYWJ01");
++                createSoPage.inputSkuCode1("1010189-001-L");
+                 createSoPage.inputActualPrice1(150.00);
+-                createSoPage.inputRequestQty1(2);
++                createSoPage.inputRequestQty1(1);
+             }else if(i == 1){
+-                createSoPage.inputSkuCode2("HGCSZYWJ02");
++                createSoPage.inputSkuCode2("1010808-010-MISC");
+                 createSoPage.inputActualPrice2(150.00);
+-                createSoPage.inputRequestQty2(2);
++                createSoPage.inputRequestQty2(1);
+             }else if(i == 2){
+                 createSoPage.inputSkuCode3("HGCSZYTS01");
+                 createSoPage.inputActualPrice3(150.00);
+@@ -85,7 +85,7 @@
+             }
+         }
+ 
+-        createSoPage.inputTransFee(10.00);
++        createSoPage.inputTransFee(0.00);
+         Thread.sleep(5000);
+ 
+         createSoPage.clickCreateAndSubmit();
+Index: src/test/java/com/test/webauto/pageobject/CreateSoPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.webauto.pageobject;\r\n\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.JavascriptExecutor;\r\nimport org.openqa.selenium.WebDriver;\r\n\r\nimport java.math.BigDecimal;\r\n\r\npublic class CreateSoPage extends PacsIndexPage {\r\n\r\n    WebDriver driver;\r\n\r\n    // 客户名称\r\n    private By customerNameBy = By.name(\"salesOrderCommand.k3CustomerName\");\r\n\r\n    // 客户列表查询的客户编码\r\n    private By customerCodeBy = By.name(\"k3Customer.customerCode\");\r\n\r\n    // 客户查询\r\n    private By queryBy = By.id(\"btnK3CustomerQuery\");\r\n    private By chooseCustomerBy = By.id(\"797215\");\r\n    private By confirmBy = By.id(\"btnK3CustomerQueryConfirm\");\r\n\r\n    // 收货人\r\n    private By receiverBy = By.id(\"receiver\");\r\n\r\n    // 手机\r\n    private By mobileBy = By.id(\"mobile\");\r\n\r\n    // 邮政编码\r\n    private By zipcodeBy = By.id(\"zipcode\");\r\n\r\n    // 省/市\r\n    private By provinceBy = By.id(\"provinceList\");\r\n\r\n    // 城市\r\n    private By cityBy = By.id(\"cityList\");\r\n\r\n    // 区\r\n    private By districtListBy = By.id(\"districtList\");\r\n\r\n    // 地址\r\n    private By addressBy = By.id(\"address\");\r\n\r\n    // 订单支付和发票信息\r\n    private By payAndInvoiceBy = By.xpath(\"//a[text()='订单支付和发票信息']/..\");\r\n\r\n    // 订单类型\r\n    private By orderTypeBy = By.id(\"salesOrderTypeChoose\");\r\n\r\n    // 支付方式\r\n    private By paymentTypeBy = By.id(\"paymentTypeList\");\r\n\r\n    // 平台原始订单编号\r\n    private By oocSourceBy = By.id(\"outerOrderCodeSource\");\r\n\r\n    // 平台订单编号\r\n    private By outerOrderCodeBy = By.id(\"outerOrderCode\");\r\n\r\n    // 订单明细信息\r\n    private By soLineBy = By.xpath(\"//a[text()='订单明细行信息']/..\");\r\n\r\n    // 新增行按钮\r\n    private By addLineBy = By.xpath(\"//span[text()='新增行']/..\");\r\n\r\n    // sku编码\r\n    private By skuCode1By = By.name(\"addLineList(-1).sku.code\");\r\n    private By skuCode2By = By.name(\"addLineList(-2).sku.code\");\r\n    private By skuCode3By = By.name(\"addLineList(-3).sku.code\");\r\n\r\n    // 销售价\r\n    private By actualprice1By = By.name(\"addLineList(-1).platformUnitPrice\");\r\n    private By actualprice2By = By.name(\"addLineList(-2).platformUnitPrice\");\r\n    private By actualprice3By = By.name(\"addLineList(-3).platformUnitPrice\");\r\n\r\n    // 购买数量\r\n    private By requestQyt1By = By.name(\"addLineList(-1).requestedQty\");\r\n    private By requestQyt2By = By.name(\"addLineList(-2).requestedQty\");\r\n    private By requestQyt3By = By.name(\"addLineList(-3).requestedQty\");\r\n\r\n    // 运费\r\n    private By transFeeBy = By.id(\"actualTransferFee\");\r\n\r\n    // 创建并提交\r\n    private By createAndSubmitBy = By.id(\"createAndSubmitBtn\");\r\n\r\n    public CreateSoPage(WebDriver driver) {\r\n        super(driver);\r\n        this.driver = driver;\r\n    }\r\n\r\n    // 订单基本信息\r\n    public void clickCustome() {\r\n        click(customerNameBy);\r\n    }\r\n\r\n    public void inputCustome(String customerName) {\r\n        // 强转类型\r\n        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;\r\n        // 通过js移除页面只读属性 方法一\r\n        jsExecutor.executeScript(\"document.getElementById('k3CustomerName').removeAttribute('readonly')\");\r\n        input(customerNameBy, customerName);\r\n    }\r\n\r\n    // 输入客户编码\r\n    public void inputCustomerCode(String customerCode) {\r\n        input(customerCodeBy, customerCode);\r\n    }\r\n\r\n    // 点击查询按钮\r\n    public void clickCustomerQuery() {\r\n        click(queryBy);\r\n    }\r\n\r\n    // 选中客户\r\n    public void chooseCustomer() {\r\n        click(chooseCustomerBy);\r\n    }\r\n\r\n    public void clickConfirm() {\r\n        click(confirmBy);\r\n    }\r\n\r\n    public void inputReceiver(String receiver) {\r\n        input(receiverBy, receiver);\r\n    }\r\n\r\n\r\n    public void inputMobile(String mobile) {\r\n        input(mobileBy, mobile);\r\n    }\r\n\r\n    public void inputZipCode(String zipCode) {\r\n        input(zipcodeBy, zipCode);\r\n    }\r\n\r\n    public void selectProvince(String province) {\r\n        select(provinceBy, province);\r\n    }\r\n\r\n    public void selectCity(String city) {\r\n        select(cityBy, city);\r\n    }\r\n\r\n    public void selectDistrict(String district) {\r\n        select(districtListBy, district);\r\n    }\r\n\r\n    public void inputAddress(String address) {\r\n        input(addressBy, address);\r\n    }\r\n\r\n    // 订单支付和发票信息页面\r\n    public void clickPaymentAndInvoice() {\r\n        click(payAndInvoiceBy);\r\n    }\r\n\r\n    public void selectOrderType(String orderType) {\r\n        select(orderTypeBy, orderType);\r\n    }\r\n    public void selectOrderType() {\r\n        select(orderTypeBy);\r\n    }\r\n\r\n\r\n    public void selectPaymentType(String paymentType) {\r\n        select(paymentTypeBy, paymentType);\r\n    }\r\n\r\n    public void selectPaymentType() {\r\n        select(paymentTypeBy);\r\n    }\r\n\r\n    public void inputOocSource(String oocSource) {\r\n        input(oocSourceBy, oocSource);\r\n    }\r\n\r\n    public void inputOutOrderCode(String outOrderCode) {\r\n        input(outerOrderCodeBy, outOrderCode);\r\n    }\r\n\r\n    // 订单明细行信息\r\n    public void clickOrderLine() {\r\n        click(soLineBy);\r\n    }\r\n\r\n    public void clickAddLine() {\r\n        click(addLineBy);\r\n    }\r\n\r\n    public void inputSkuCode1(String skuCode) {\r\n        input(skuCode1By, skuCode);\r\n    }\r\n\r\n    public void inputSkuCode2(String skuCode) {\r\n        input(skuCode2By, skuCode);\r\n    }\r\n\r\n    public void inputSkuCode3(String skuCode) {\r\n        input(skuCode3By, skuCode);\r\n    }\r\n\r\n    public void inputActualPrice1(Double actualPrice) {\r\n        input(actualprice1By, String.valueOf(actualPrice));\r\n    }\r\n    public void inputActualPrice2(Double actualPrice) {\r\n        input(actualprice2By, String.valueOf(actualPrice));\r\n    }\r\n    public void inputActualPrice3(Double actualPrice) {\r\n        input(actualprice3By, String.valueOf(actualPrice));\r\n    }\r\n\r\n    public void inputRequestQty1(int requestQty) {\r\n        input(requestQyt1By, String.valueOf(requestQty));\r\n    }\r\n\r\n    public void inputRequestQty2(int requestQty) {\r\n        input(requestQyt2By, String.valueOf(requestQty));\r\n    }\r\n\r\n    public void inputRequestQty3(int requestQty) {\r\n        input(requestQyt3By, String.valueOf(requestQty));\r\n    }\r\n\r\n    public void inputTransFee(Double transFee) {\r\n        input(transFeeBy, String.valueOf(transFee));\r\n    }\r\n\r\n    public void clickCreateAndSubmit() {\r\n        click(createAndSubmitBy);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/webauto/pageobject/CreateSoPage.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/webauto/pageobject/CreateSoPage.java	(date 1610344069169)
+@@ -18,7 +18,7 @@
+ 
+     // 客户查询
+     private By queryBy = By.id("btnK3CustomerQuery");
+-    private By chooseCustomerBy = By.id("797215");
++    private By chooseCustomerBy = By.xpath("//*[@id=''tbl_k3_customer_query_dialog]/tbody/tr[2]");
+     private By confirmBy = By.id("btnK3CustomerQueryConfirm");
+ 
+     // 收货人

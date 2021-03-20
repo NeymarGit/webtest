@@ -1,0 +1,460 @@
+Index: src/test/java/com/test/addaccount/constant/Constant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.addaccount.constant;\r\n\r\n// 常量配置\r\npublic class Constant {\r\n    public static final String DEFAULT_BROWSE = \"chrome\";\r\n    public static final String FIREFOX_BROWSE = \"firefox\";\r\n\r\n    public static final String CHROME_DRIVER_KEY = \"webdriver.chrome.driver\";\r\n    public static final String CHROME_DRIVER_VALUE = \"src/test/resources/chromedriver.exe\";\r\n\r\n    public static final String FIREFOX_KEY = \"webdriver.firefox.bin\";\r\n    public static final String FIREFOX_VALUE = \"F:/Firefox/firefox.exe\";\r\n\r\n    public static final String FIREFOX_DRIVER_KEY = \"src/test/resources/chromedriver.exe\";\r\n    public static final String FIREFOX_DRIVER_VALUE = \"src/test/resources/chromedriver.exe\";\r\n\r\n\r\n    public static final String UAC_URL = \"http://test.account.baozun.cn/person/login?appkey=PC_DEV\";\r\n    public static final String BASE_URL = \"http://account-test.baozun.cn/person/login\";\r\n    public static final String PAC_URL = BASE_URL + \"?appkey=PAC-TEST\";\r\n    public static final String TOMS_URL =  BASE_URL + \"?appkey=OMS-TEST\";\r\n\r\n    public static final String DEFAULT_LOGIN_NAME = \"liuyanghe\";\r\n    public static final String DEFAULT_PASSWORD = \"qqqq1111\";\r\n\r\n    // 需要添加账号的信息\r\n    public static final String CREATE_LOGIN_NAME = \"Auto1002\";\r\n    public static final String CREATE_JOB_NUMBER = \"5208\";\r\n    public static final String CREATE_EMAIL = \"yanghe.liu@baozun.com\";\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/addaccount/constant/Constant.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/addaccount/constant/Constant.java	(date 1609989982207)
+@@ -24,7 +24,7 @@
+     public static final String DEFAULT_PASSWORD = "qqqq1111";
+ 
+     // 需要添加账号的信息
+-    public static final String CREATE_LOGIN_NAME = "Auto1002";
++    public static final String CREATE_LOGIN_NAME = "Auto1001";
+     public static final String CREATE_JOB_NUMBER = "5208";
+     public static final String CREATE_EMAIL = "yanghe.liu@baozun.com";
+ 
+Index: src/test/java/com/test/addaccount/testcase/CreateAccount.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.addaccount.testcase;\r\n\r\nimport com.test.addaccount.common.BaseCase;\r\nimport com.test.addaccount.constant.Constant;\r\nimport com.test.addaccount.pageobject.*;\r\nimport org.openqa.selenium.Alert;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class CreateAccount extends BaseCase {\r\n//    public WebDriver driver = null;\r\n\r\n\r\n    @Test\r\n    public void createAccount() throws InterruptedException {\r\n  /*      // 访问UAC登录页面\r\n        driver.get(Constant.UAC_URL);\r\n\r\n        // 登录\r\n        UacLoginPage uacLoginPage = new UacLoginPage(driver);\r\n        uacLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);\r\n        uacLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);\r\n        uacLoginPage.clickLoginBtn();\r\n\r\n        // UAC首页\r\n        UacIndexPage uacIndexPage = new UacIndexPage(driver);\r\n        uacIndexPage.clickUserManage();\r\n        uacIndexPage.clickSubUserManage();\r\n        uacIndexPage.clickAddUser();\r\n\r\n        // 添加用户页面\r\n        UacAddUserPage uacAddUserPage = new UacAddUserPage(driver);\r\n        uacAddUserPage.inputLoginName(Constant.CREATE_LOGIN_NAME);\r\n        uacAddUserPage.inputUserName(Constant.CREATE_LOGIN_NAME);\r\n        uacAddUserPage.inputJobNumber(Constant.CREATE_JOB_NUMBER);\r\n        uacAddUserPage.inputPassword(Constant.DEFAULT_PASSWORD);\r\n        uacAddUserPage.inputRePassword(Constant.DEFAULT_PASSWORD);\r\n\r\n        uacAddUserPage.inputEmail(Constant.CREATE_EMAIL);\r\n        uacAddUserPage.clickSaveBtn();\r\n        Thread.sleep(1000);\r\n        uacAddUserPage.clickAuthor();\r\n        uacAddUserPage.clickToms();\r\n        uacAddUserPage.clickPacs();\r\n        uacAddUserPage.clickSaveAuthor();\r\n/*\r\n        // 切换到PAC创用户页面\r\n        driver.get(Constant.PAC_URL);\r\n        UacLoginPage pacLoginPage = new UacLoginPage(driver);\r\n        pacLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);\r\n        pacLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);\r\n        pacLoginPage.clickLoginBtn();\r\n        PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);\r\n        pacsIndexPage.clickRole();\r\n        pacsIndexPage.chooseAdmin();\r\n        pacsIndexPage.clickDetermine();\r\n        pacsIndexPage.clickMenu();\r\n        pacsIndexPage.clickSystem();\r\n        pacsIndexPage.clickUserBaseInfoCreate();\r\n\r\n        driver.switchTo().frame(1);\r\n        PacUserBaseInfoCreatePage baseInfoCreatePage = new PacUserBaseInfoCreatePage(driver);\r\n        baseInfoCreatePage.inputLoginName(Constant.CREATE_LOGIN_NAME);\r\n        baseInfoCreatePage.inputPassword(Constant.DEFAULT_PASSWORD);\r\n        baseInfoCreatePage.inputUserName(Constant.CREATE_LOGIN_NAME);\r\n        baseInfoCreatePage.inputJobNumber(Constant.CREATE_JOB_NUMBER);\r\n        baseInfoCreatePage.inputEmail(Constant.CREATE_EMAIL);\r\n        baseInfoCreatePage.selectAddOuType(\"集团\");\r\n        Thread.sleep(500);\r\n        baseInfoCreatePage.selectOperationUnitId(\"宝尊电商集团\");\r\n        baseInfoCreatePage.selectRoleId(\"Administrator\");\r\n        baseInfoCreatePage.clickAddRoleBtn();\r\n        baseInfoCreatePage.clickIsDefault();\r\n        baseInfoCreatePage.clickCreateUserBtn();\r\n        Alert alert = driver.switchTo().alert();\r\n        alert.accept();\r\n*/\r\n        // 切换到TOMS编辑用户页面\r\n        driver.get(Constant.TOMS_URL);\r\n        UacLoginPage tomsLoginPage = new UacLoginPage(driver);\r\n        tomsLoginPage.inputLoginName(Constant.DEFAULT_LOGIN_NAME);\r\n        tomsLoginPage.inputPassWord(Constant.DEFAULT_PASSWORD);\r\n        tomsLoginPage.clickLoginBtn();\r\n        TomsIndexPage tomsIndexPage = new TomsIndexPage(driver);\r\n        tomsIndexPage.clickRole();\r\n        tomsIndexPage.chooseAdmin();\r\n        tomsIndexPage.clickDetermine();\r\n        tomsIndexPage.clickMenu();\r\n        tomsIndexPage.clickSystem();\r\n        tomsIndexPage.clickUserBaseInfoEdit();\r\n\r\n        driver.switchTo().frame(1);\r\n        TomsUserBaseInfoEditPage tomsUserBaseInfoEditPage = new TomsUserBaseInfoEditPage(driver);\r\n        tomsUserBaseInfoEditPage.inputLoginName(Constant.CREATE_LOGIN_NAME);\r\n        tomsUserBaseInfoEditPage.clickQueryBtn();\r\n        tomsUserBaseInfoEditPage.clickCheckBox();\r\n        tomsUserBaseInfoEditPage.clickModifyBtn();\r\n        driver.switchTo().frame(1);\r\n        tomsUserBaseInfoEditPage.selectAddOuType(\"集团\");\r\n        tomsUserBaseInfoEditPage.selectOperationUnitId(\"宝尊电商集团\");\r\n        tomsUserBaseInfoEditPage.selectRoleId(\"Administrator\");\r\n        tomsUserBaseInfoEditPage.clickAddRoleBtn();\r\n        tomsUserBaseInfoEditPage.clickIsDefault();\r\n        tomsUserBaseInfoEditPage.clickModifyUserBtn();\r\n\r\n\r\n    }\r\n\r\n\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/addaccount/testcase/CreateAccount.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/addaccount/testcase/CreateAccount.java	(date 1610025999190)
+@@ -12,7 +12,7 @@
+ 
+     @Test
+     public void createAccount() throws InterruptedException {
+-  /*      // 访问UAC登录页面
++     // 访问UAC登录页面
+         driver.get(Constant.UAC_URL);
+ 
+         // 登录
+Index: Neymar.iml
+===================================================================
+--- Neymar.iml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ Neymar.iml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>com.test.star</groupId>\r\n  <artifactId>Neymar</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n  <packaging>war</packaging>\r\n\r\n  <name>Neymar Maven Webapp</name>\r\n  <!-- FIXME change it to the project's website -->\r\n  <url>http://www.example.com</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    <maven.compiler.source>1.7</maven.compiler.source>\r\n    <maven.compiler.target>1.7</maven.compiler.target>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>4.11</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->\r\n    <dependency>\r\n      <groupId>com.alibaba</groupId>\r\n      <artifactId>fastjson</artifactId>\r\n      <version>1.2.70</version>\r\n    </dependency>\r\n\r\n    <dependency>\r\n      <groupId>org.testng</groupId>\r\n      <artifactId>testng</artifactId>\r\n      <version>6.9.10</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n\r\n    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->\r\n    <dependency>\r\n      <groupId>org.seleniumhq.selenium</groupId>\r\n      <artifactId>selenium-java</artifactId>\r\n      <version>3.141.59</version>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.jetbrains</groupId>\r\n      <artifactId>annotations-java5</artifactId>\r\n      <version>15.0</version>\r\n      <scope>compile</scope>\r\n    </dependency>\r\n\r\n  </dependencies>\r\n\r\n  <build>\r\n    <finalName>Neymar</finalName>\r\n    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->\r\n      <plugins>\r\n        <plugin>\r\n          <artifactId>maven-clean-plugin</artifactId>\r\n          <version>3.1.0</version>\r\n        </plugin>\r\n        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->\r\n        <plugin>\r\n          <artifactId>maven-resources-plugin</artifactId>\r\n          <version>3.0.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-compiler-plugin</artifactId>\r\n          <version>3.8.0</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-surefire-plugin</artifactId>\r\n          <version>2.22.1</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-war-plugin</artifactId>\r\n          <version>3.2.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-install-plugin</artifactId>\r\n          <version>2.5.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-deploy-plugin</artifactId>\r\n          <version>2.8.2</version>\r\n        </plugin>\r\n      </plugins>\r\n    </pluginManagement>\r\n  </build>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- pom.xml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ pom.xml	(date 1609986590645)
+@@ -53,6 +53,14 @@
+       <scope>compile</scope>
+     </dependency>
+ 
++    <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
++    <dependency>
++      <groupId>com.alibaba</groupId>
++      <artifactId>fastjson</artifactId>
++      <version>1.2.73</version>
++    </dependency>
++
++
+   </dependencies>
+ 
+   <build>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AnalysisUIOptions\">\r\n    <option name=\"GROUP_BY_SEVERITY\" value=\"true\" />\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"BranchesTreeState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"31e4888d-9839-477e-86d7-5f845587ce82\" name=\"Default Changelist\" comment=\"PAC创建账号\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsIndexPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Pull.Settings\">\r\n    <option name=\"BRANCH\" value=\"master\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"SET_USER_NAME_GLOBALLY\" value=\"false\" />\r\n  </component>\r\n  <component name=\"JavaeeView\">\r\n    <option name=\"frameworksView\" value=\"false\" />\r\n    <option name=\"showModules\" value=\"false\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"localRepository\" value=\"D:\\Maven\\LocalFactory\" />\r\n        <option name=\"mavenHome\" value=\"D:\\Maven\\apache-maven-3.6.3\" />\r\n        <option name=\"userSettingsFile\" value=\"D:\\Maven\\apache-maven-3.6.3\\conf\\settings.xml\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1eFNpEARx5sPmauwCs1TepE0sf2\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"foldersAlwaysOnTop\" value=\"false\" />\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"extract.method.default.visibility\" value=\"private\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Project\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.2\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\IDEA\\Neymar\\src\\test\\resources\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"com.test\" />\r\n      <recent name=\"come.test\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"com.test.addaccount.pageobject\" />\r\n      <recent name=\"com.test.addaccount.constant.Util\" />\r\n      <recent name=\"com.test.addaccount.constant\" />\r\n      <recent name=\"com.test.webauto.constant\" />\r\n      <recent name=\"com.test.webauto.driver\" />\r\n    </key>\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\addaccount\\pageobject\" />\r\n      <recent name=\"D:\\IDEA\\Neymar\\src\\test\\java\\com\\test\\addaccount\" />\r\n      <recent name=\"C:\\IDEA\\Neymar\\src\\test\\resources\" />\r\n      <recent name=\"C:\\IDEA\\Neymar\\src\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.CreateAccount.createAccount\">\r\n    <configuration default=\"true\" type=\"ArquillianTestNG\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount (1)\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount (2)\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount (3)\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CreateAccount.createAccount\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.addaccount.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.addaccount.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.addaccount.testcase.CreateAccount\" />\r\n      <option name=\"METHOD_NAME\" value=\"createAccount\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"LoginCase\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Neymar\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.test.webauto.testcase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.test.webauto.testcase\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.test.webauto.testcase.LoginCase\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount\" />\r\n        <item itemvalue=\"TestNG.CreateAccount\" />\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount (3)\" />\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount (2)\" />\r\n        <item itemvalue=\"TestNG.CreateAccount.createAccount (1)\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"31e4888d-9839-477e-86d7-5f845587ce82\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1593913561879</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1593913561879</updated>\r\n      <workItem from=\"1593913563588\" duration=\"5706000\" />\r\n      <workItem from=\"1593945451659\" duration=\"112000\" />\r\n      <workItem from=\"1593946318200\" duration=\"10000\" />\r\n      <workItem from=\"1594941566007\" duration=\"20000\" />\r\n      <workItem from=\"1595123035065\" duration=\"294000\" />\r\n      <workItem from=\"1599490951080\" duration=\"9000\" />\r\n      <workItem from=\"1603608756246\" duration=\"6361000\" />\r\n      <workItem from=\"1603636560615\" duration=\"600000\" />\r\n      <workItem from=\"1604497960955\" duration=\"8298000\" />\r\n      <workItem from=\"1604577644704\" duration=\"29113000\" />\r\n      <workItem from=\"1604846780468\" duration=\"12266000\" />\r\n      <workItem from=\"1605189130080\" duration=\"622000\" />\r\n      <workItem from=\"1605190091211\" duration=\"176000\" />\r\n      <workItem from=\"1605190287451\" duration=\"119000\" />\r\n      <workItem from=\"1605190591159\" duration=\"587000\" />\r\n      <workItem from=\"1605191388134\" duration=\"15000\" />\r\n      <workItem from=\"1605191443621\" duration=\"114000\" />\r\n      <workItem from=\"1605191571329\" duration=\"24000\" />\r\n      <workItem from=\"1605191606646\" duration=\"5580000\" />\r\n      <workItem from=\"1605226175455\" duration=\"972000\" />\r\n      <workItem from=\"1605267490079\" duration=\"612000\" />\r\n      <workItem from=\"1605269922225\" duration=\"2424000\" />\r\n      <workItem from=\"1605351700336\" duration=\"2134000\" />\r\n      <workItem from=\"1605405349686\" duration=\"594000\" />\r\n      <workItem from=\"1605412713817\" duration=\"1008000\" />\r\n      <workItem from=\"1605708476857\" duration=\"2158000\" />\r\n      <workItem from=\"1606060901525\" duration=\"4000\" />\r\n      <workItem from=\"1606622454343\" duration=\"115000\" />\r\n      <workItem from=\"1606622850539\" duration=\"805000\" />\r\n      <workItem from=\"1606623685896\" duration=\"643000\" />\r\n      <workItem from=\"1606636491339\" duration=\"1000\" />\r\n      <workItem from=\"1607008581954\" duration=\"604000\" />\r\n      <workItem from=\"1607150393123\" duration=\"3000\" />\r\n      <workItem from=\"1607179089191\" duration=\"3000\" />\r\n      <workItem from=\"1607440321130\" duration=\"311000\" />\r\n      <workItem from=\"1607825118510\" duration=\"53807000\" />\r\n      <workItem from=\"1608690705299\" duration=\"1781000\" />\r\n      <workItem from=\"1608724303146\" duration=\"27531000\" />\r\n      <workItem from=\"1609339590013\" duration=\"162000\" />\r\n      <workItem from=\"1609339789424\" duration=\"1001000\" />\r\n      <workItem from=\"1609340823725\" duration=\"24000\" />\r\n      <workItem from=\"1609340898843\" duration=\"11000\" />\r\n      <workItem from=\"1609341525793\" duration=\"682000\" />\r\n      <workItem from=\"1609342245273\" duration=\"64000\" />\r\n      <workItem from=\"1609342329143\" duration=\"1845000\" />\r\n      <workItem from=\"1609483129555\" duration=\"15995000\" />\r\n      <workItem from=\"1609570817887\" duration=\"3760000\" />\r\n      <workItem from=\"1609577485534\" duration=\"4568000\" />\r\n      <workItem from=\"1609639775315\" duration=\"10734000\" />\r\n      <workItem from=\"1609652499667\" duration=\"4963000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Web自动化第一次提交\">\r\n      <created>1608727588607</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1608727588607</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"定位到创单页面\">\r\n      <created>1608738552503</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1608738552503</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"定位到创单页面\">\r\n      <created>1608738616243</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1608738616243</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"切换店铺优化\">\r\n      <created>1609484136579</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609484136579</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"切换店铺优化\">\r\n      <created>1609484528336</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609484528336</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"切换店铺优化\">\r\n      <created>1609640262602</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609640262602</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"创单成功！！！\">\r\n      <created>1609640781132</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609640781132</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"登录UAC成功！！\">\r\n      <created>1609649067241</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609649067241</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"PAC创建账号\">\r\n      <created>1609892760597</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1609892760597</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"1\">\r\n          <value>\r\n            <State>\r\n              <option name=\"SHOW_ONLY_AFFECTED_CHANGES\" value=\"true\" />\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"HEAD\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                  <entry key=\"roots\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"$PROJECT_DIR$\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Web自动化第一次提交\" />\r\n    <MESSAGE value=\"定位到创单页面\" />\r\n    <MESSAGE value=\"切换店铺优化\" />\r\n    <MESSAGE value=\"创单成功！！！\" />\r\n    <MESSAGE value=\"登录UAC成功！！\" />\r\n    <MESSAGE value=\"PAC创建账号\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"PAC创建账号\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"694\" y=\"343\" key=\"#Notifications\" timestamp=\"1609940051329\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"694\" y=\"343\" key=\"#Notifications/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609940051329\" />\r\n    <state x=\"713\" y=\"320\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1608727842863\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"713\" y=\"320\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608727842863\" />\r\n    <state x=\"765\" y=\"225\" key=\"#com.intellij.ide.util.MemberChooser\" timestamp=\"1609859352982\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"765\" y=\"225\" key=\"#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609859352982\" />\r\n    <state x=\"690\" y=\"296\" key=\"#com.intellij.ide.util.PackageChooserDialog\" timestamp=\"1609858180657\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"690\" y=\"296\" key=\"#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609858180657\" />\r\n    <state x=\"736\" y=\"413\" width=\"447\" height=\"221\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes\" timestamp=\"1609486681227\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"736\" y=\"413\" width=\"447\" height=\"221\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609486681227\" />\r\n    <state x=\"739\" y=\"426\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages\" timestamp=\"1608452839949\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"739\" y=\"426\" key=\"#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608452839949\" />\r\n    <state x=\"677\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog\" timestamp=\"1609861540866\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"677\" y=\"0\" key=\"#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609861540866\" />\r\n    <state width=\"324\" height=\"442\" key=\"Diff.GoToChangePopup\" timestamp=\"1608738629814\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"324\" height=\"442\" key=\"Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608738629814\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"DiffContextDialog\" timestamp=\"1608739804775\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"DiffContextDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608739804775\" />\r\n    <state x=\"837\" y=\"288\" key=\"FileChooserDialogImpl\" timestamp=\"1608726623660\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"837\" y=\"288\" key=\"FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608726623660\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1609947143430\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609947143430\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.center\" timestamp=\"1609947143430\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609947143430\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.left\" timestamp=\"1609947143430\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609947143430\" />\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.right\" timestamp=\"1609947143430\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"282\" key=\"GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609947143430\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.center\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.left\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.right\" timestamp=\"1608462464646\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state width=\"1877\" height=\"348\" key=\"GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608462464646\" />\r\n    <state x=\"529\" y=\"90\" width=\"998\" height=\"892\" key=\"SettingsEditor\" timestamp=\"1609577455825\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"529\" y=\"90\" width=\"998\" height=\"892\" key=\"SettingsEditor/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609577455825\" />\r\n    <state x=\"552\" y=\"253\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1609892761942\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"552\" y=\"253\" key=\"Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609892761942\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" maximized=\"true\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog\" timestamp=\"1608304357352\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" maximized=\"true\" key=\"com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608304357352\" />\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"com.intellij.history.integration.ui.views.SelectionHistoryDialog\" timestamp=\"1608220848788\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"92\" y=\"92\" width=\"1736\" height=\"856\" key=\"com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608220848788\" />\r\n    <state x=\"643\" y=\"198\" key=\"com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser\" timestamp=\"1608043342776\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"643\" y=\"198\" key=\"com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608043342776\" />\r\n    <state x=\"763\" y=\"433\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1609940023023\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"763\" y=\"433\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609940023023\" />\r\n    <state x=\"502\" y=\"249\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2\" timestamp=\"1608131528682\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"502\" y=\"249\" key=\"com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608131528682\" />\r\n    <state x=\"690\" y=\"268\" key=\"extract.method.dialog\" timestamp=\"1608040330163\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"690\" y=\"268\" key=\"extract.method.dialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608040330163\" />\r\n    <state x=\"662\" y=\"223\" width=\"596\" height=\"594\" key=\"find.popup\" timestamp=\"1609863522694\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"662\" y=\"223\" width=\"596\" height=\"594\" key=\"find.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1609863522694\" />\r\n    <state x=\"761\" y=\"426\" key=\"git4idea.remote.GitConfigureRemotesDialog\" timestamp=\"1608727046276\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"761\" y=\"426\" key=\"git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608727046276\" />\r\n    <state x=\"718\" y=\"330\" width=\"628\" height=\"548\" key=\"org.intellij.images.editor.actions.BackgroundImageDialog\" timestamp=\"1607849493122\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"718\" y=\"330\" width=\"628\" height=\"548\" key=\"org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1607849493122\" />\r\n    <state x=\"623\" y=\"225\" width=\"672\" height=\"678\" key=\"search.everywhere.popup\" timestamp=\"1608454357031\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"623\" y=\"225\" width=\"672\" height=\"678\" key=\"search.everywhere.popup/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1608454357031\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ .idea/workspace.xml	(date 1610077296263)
+@@ -7,18 +7,45 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="BranchesTreeState">
+-    <expand />
++    <expand>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </expand>
+     <select />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="PAC创建账号">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsIndexPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/TomsUserBaseInfoEditPage.java" afterDir="false" />
++    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="定位到创单页面">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Neymar.iml" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/PacsIndexPage.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/util/Driver.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/pageobject/CreateSoPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/Constant.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/Driver.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationApi.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationXPath.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/ElementLocationXPath.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/SpecialElement02.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/web/WebDriverAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/web/WebDriverAPI.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/Util/Driver.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BaseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BaseCase.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/common/BasePage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/LoginPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/pageobject/PacsIndexPage.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -38,6 +65,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+     <option name="SET_USER_NAME_GLOBALLY" value="false" />
++    <option name="UPDATE_TYPE" value="REBASE" />
+   </component>
+   <component name="JavaeeView">
+     <option name="frameworksView" value="false" />
+@@ -47,7 +75,7 @@
+     <option name="generalSettings">
+       <MavenGeneralSettings>
+         <option name="localRepository" value="D:\Maven\LocalFactory" />
+-        <option name="mavenHome" value="D:\Maven\apache-maven-3.6.3" />
++        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+         <option name="userSettingsFile" value="D:\Maven\apache-maven-3.6.3\conf\settings.xml" />
+       </MavenGeneralSettings>
+     </option>
+@@ -73,7 +101,7 @@
+     <property name="project.structure.last.edited" value="Project" />
+     <property name="project.structure.proportion" value="0.15" />
+     <property name="project.structure.side.proportion" value="0.2" />
+-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
++    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+   </component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+@@ -97,30 +125,13 @@
+       <recent name="C:\IDEA\Neymar\src" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.CreateAccount.createAccount">
++  <component name="RunManager" selected="TestNG.CreateAccount.createAccount (2)">
+     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+       <option name="arquillianRunConfiguration">
+         <value>
+           <option name="containerStateName" value="" />
+         </value>
+       </option>
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="CreateAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="Neymar" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
+-      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -164,7 +175,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CreateAccount.createAccount (3)" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="CreateAccount.createAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Neymar" />
+       <extension name="coverage">
+         <pattern>
+@@ -182,25 +193,24 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="CreateAccount.createAccount" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="CreateSoCase" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Neymar" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="com.test.addaccount.testcase.*" />
++          <option name="PATTERN" value="com.test.webauto.testcase.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="com.test.addaccount.testcase" />
+-      <option name="MAIN_CLASS_NAME" value="com.test.addaccount.testcase.CreateAccount" />
+-      <option name="METHOD_NAME" value="createAccount" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
++      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.CreateSoCase" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="LoginCase" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="CreateSoCase.createSo" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Neymar" />
+       <extension name="coverage">
+         <pattern>
+@@ -209,8 +219,9 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="com.test.webauto.testcase" />
+-      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.LoginCase" />
+-      <option name="TEST_OBJECT" value="CLASS" />
++      <option name="MAIN_CLASS_NAME" value="com.test.webauto.testcase.CreateSoCase" />
++      <option name="METHOD_NAME" value="createSo" />
++      <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+       <method v="2">
+@@ -219,11 +230,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.CreateAccount.createAccount" />
+-        <item itemvalue="TestNG.CreateAccount" />
+-        <item itemvalue="TestNG.CreateAccount.createAccount (3)" />
+         <item itemvalue="TestNG.CreateAccount.createAccount (2)" />
++        <item itemvalue="TestNG.CreateAccount.createAccount" />
+         <item itemvalue="TestNG.CreateAccount.createAccount (1)" />
++        <item itemvalue="TestNG.CreateSoCase.createSo" />
++        <item itemvalue="TestNG.CreateSoCase" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -345,18 +356,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1609649067241</updated>
+     </task>
+-    <task id="LOCAL-00009" summary="PAC创建账号">
+-      <created>1609892760597</created>
+-      <option name="number" value="00009" />
+-      <option name="presentableId" value="LOCAL-00009" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1609892760597</updated>
+-    </task>
+-    <option name="localTasksCounter" value="10" />
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.History.Properties">
++    <option name="COLUMN_ORDER">
++      <list>
++        <option value="0" />
++        <option value="2" />
++        <option value="3" />
++        <option value="1" />
++      </list>
++    </option>
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+     <option name="TAB_STATES">
+@@ -401,14 +415,13 @@
+     <MESSAGE value="切换店铺优化" />
+     <MESSAGE value="创单成功！！！" />
+     <MESSAGE value="登录UAC成功！！" />
+-    <MESSAGE value="PAC创建账号" />
+-    <option name="LAST_COMMIT_MESSAGE" value="PAC创建账号" />
++    <option name="LAST_COMMIT_MESSAGE" value="登录UAC成功！！" />
+   </component>
+   <component name="WindowStateProjectService">
+-    <state x="694" y="343" key="#Notifications" timestamp="1609940051329">
++    <state x="694" y="343" key="#Notifications" timestamp="1608726221504">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="694" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1609940051329" />
++    <state x="694" y="343" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1608726221504" />
+     <state x="713" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608727842863">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -437,30 +450,30 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state width="324" height="442" key="Diff.GoToChangePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1608738629814" />
+-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1608739804775">
++    <state x="66" y="126" width="1736" height="856" key="DiffContextDialog" timestamp="1609987462862">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608739804775" />
++    <state x="66" y="126" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609987462862" />
+     <state x="837" y="288" key="FileChooserDialogImpl" timestamp="1608726623660">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="837" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608726623660" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1609947143430">
++    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610008076884">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1609947143430">
++    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610008076884" />
++    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610008076884">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1609947143430">
++    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610008076884" />
++    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610008076884">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
+-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1609947143430">
++    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610008076884" />
++    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610008076884">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609947143430" />
++    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610008076884" />
+     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1608462464646">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -477,14 +490,22 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608462464646" />
+-    <state x="529" y="90" width="998" height="892" key="SettingsEditor" timestamp="1609577455825">
++    <state x="728" y="221" key="RollbackChangesDialog" timestamp="1609987483292">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="529" y="90" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609577455825" />
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609892761942">
++    <state x="728" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609987483292" />
++    <state x="782" y="31" width="998" height="892" key="SettingsEditor" timestamp="1610077295901">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609892761942" />
++    <state x="782" y="31" width="998" height="892" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610077295901" />
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609892731407">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609892731407" />
++    <state x="744" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1609987251687">
++      <screen x="0" y="0" width="1920" height="1040" />
++    </state>
++    <state x="744" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609987251687" />
+     <state x="92" y="92" width="1736" height="856" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1608304357352">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+@@ -497,10 +518,10 @@
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+     <state x="643" y="198" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608043342776" />
+-    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609940023023">
++    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609986665872">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+-    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609940023023" />
++    <state x="763" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609986665872" />
+     <state x="502" y="249" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1608131528682">
+       <screen x="0" y="0" width="1920" height="1040" />
+     </state>
+Index: src/test/java/com/test/webauto/testcase/CreateSoCase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.webauto.testcase;\r\n\r\nimport com.test.webauto.common.BaseCase;\r\nimport com.test.webauto.constant.Constant;\r\nimport com.test.webauto.pageobject.CreateSoPage;\r\nimport com.test.webauto.pageobject.LoginPage;\r\nimport com.test.webauto.pageobject.PacsIndexPage;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class CreateSoCase extends BaseCase {\r\n\r\n\r\n    @Test(priority = 1) // 设置运行优先级，默认为0优先跑\r\n    public void createSo() throws InterruptedException {\r\n\r\n        driver.get(Constant.PAC_URL);\r\n        driver.manage().window().maximize();\r\n\r\n        // 登录页面\r\n        LoginPage loginPage = new LoginPage(driver);\r\n        loginPage.inputLoginName(Constant.LOGIN_NAME);\r\n        loginPage.inputPwd(Constant.PASSWORD);\r\n        loginPage.clickLoginBtn();\r\n\r\n        PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);\r\n        // 切换店铺权限\r\n        pacsIndexPage.clickRole();\r\n        pacsIndexPage.chooseShop(\"PAC回归测试店铺0\");\r\n        pacsIndexPage.clickDetermine();\r\n        Thread.sleep(1000);\r\n\r\n        // 找到下单页面\r\n        pacsIndexPage.clickMenu();\r\n        Thread.sleep(1000);\r\n        pacsIndexPage.clickSoManage();\r\n        Thread.sleep(1000);\r\n        pacsIndexPage.clickCreateSo();\r\n        Thread.sleep(1000);\r\n\r\n        // 切换iframe\r\n        driver.switchTo().frame(1);\r\n\r\n        // 创建订单基本信息\r\n        CreateSoPage createSoPage = new CreateSoPage(driver);\r\n        createSoPage.clickCustome();\r\n//        createSoPage.inputCustome(\"华为技术有限公司\");\r\n        createSoPage.inputCustomerCode(\"CUS000138\");\r\n        createSoPage.clickCustomerQuery();\r\n//        Thread.sleep(2000);\r\n        createSoPage.chooseCustomer();\r\n        createSoPage.clickConfirm();\r\n\r\n        createSoPage.inputReceiver(\"Neymar\");\r\n        createSoPage.inputMobile(\"18845457878\");\r\n        createSoPage.inputZipCode(\"426100\");\r\n        createSoPage.selectProvince(\"上海\");\r\n        createSoPage.selectCity(\"上海市\");\r\n        createSoPage.selectDistrict(\"徐汇区\");\r\n        createSoPage.inputAddress(\"1268号1003\");\r\n\r\n        // 订单支付和发票信息\r\n        createSoPage.clickPaymentAndInvoice();\r\n        createSoPage.selectOrderType();\r\n        createSoPage.selectPaymentType();\r\n        String value = String.valueOf(System.currentTimeMillis());\r\n        createSoPage.inputOocSource(value);\r\n        createSoPage.inputOutOrderCode(value);\r\n\r\n        // 订单明细行信息\r\n        createSoPage.clickOrderLine();\r\n        for (int i = 0; i < 3; i++) {\r\n            createSoPage.clickAddLine();\r\n            if(i == 0){\r\n                createSoPage.inputSkuCode1(\"HGCSZYWJ01\");\r\n                createSoPage.inputActualPrice1(150.00);\r\n                createSoPage.inputRequestQty1(2);\r\n            }else if(i == 1){\r\n                createSoPage.inputSkuCode2(\"HGCSZYWJ02\");\r\n                createSoPage.inputActualPrice2(150.00);\r\n                createSoPage.inputRequestQty2(2);\r\n            }else if(i == 2){\r\n                createSoPage.inputSkuCode3(\"HGCSZYTS01\");\r\n                createSoPage.inputActualPrice3(150.00);\r\n                createSoPage.inputRequestQty3(2);\r\n            }\r\n        }\r\n\r\n        createSoPage.inputTransFee(10.00);\r\n        Thread.sleep(5000);\r\n\r\n        createSoPage.clickCreateAndSubmit();\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/webauto/testcase/CreateSoCase.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/webauto/testcase/CreateSoCase.java	(date 1609986597828)
+@@ -25,7 +25,7 @@
+         PacsIndexPage pacsIndexPage = new PacsIndexPage(driver);
+         // 切换店铺权限
+         pacsIndexPage.clickRole();
+-        pacsIndexPage.chooseShop("PAC回归测试店铺0");
++        pacsIndexPage.chooseShop("香港nike中国官方商城90");
+         pacsIndexPage.clickDetermine();
+         Thread.sleep(1000);
+ 
+@@ -44,7 +44,7 @@
+         CreateSoPage createSoPage = new CreateSoPage(driver);
+         createSoPage.clickCustome();
+ //        createSoPage.inputCustome("华为技术有限公司");
+-        createSoPage.inputCustomerCode("CUS000138");
++        createSoPage.inputCustomerCode("CUS000032");
+         createSoPage.clickCustomerQuery();
+ //        Thread.sleep(2000);
+         createSoPage.chooseCustomer();
+@@ -68,16 +68,16 @@
+ 
+         // 订单明细行信息
+         createSoPage.clickOrderLine();
+-        for (int i = 0; i < 3; i++) {
++        for (int i = 0; i < 2; i++) {
+             createSoPage.clickAddLine();
+             if(i == 0){
+-                createSoPage.inputSkuCode1("HGCSZYWJ01");
++                createSoPage.inputSkuCode1("1010189-001-L");
+                 createSoPage.inputActualPrice1(150.00);
+-                createSoPage.inputRequestQty1(2);
++                createSoPage.inputRequestQty1(1);
+             }else if(i == 1){
+-                createSoPage.inputSkuCode2("HGCSZYWJ02");
++                createSoPage.inputSkuCode2("1010808-010-MISC");
+                 createSoPage.inputActualPrice2(150.00);
+-                createSoPage.inputRequestQty2(2);
++                createSoPage.inputRequestQty2(1);
+             }else if(i == 2){
+                 createSoPage.inputSkuCode3("HGCSZYTS01");
+                 createSoPage.inputActualPrice3(150.00);
+@@ -85,7 +85,7 @@
+             }
+         }
+ 
+-        createSoPage.inputTransFee(10.00);
++        createSoPage.inputTransFee(0.00);
+         Thread.sleep(5000);
+ 
+         createSoPage.clickCreateAndSubmit();
+Index: src/test/java/com/test/webauto/pageobject/CreateSoPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.test.webauto.pageobject;\r\n\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.JavascriptExecutor;\r\nimport org.openqa.selenium.WebDriver;\r\n\r\nimport java.math.BigDecimal;\r\n\r\npublic class CreateSoPage extends PacsIndexPage {\r\n\r\n    WebDriver driver;\r\n\r\n    // 客户名称\r\n    private By customerNameBy = By.name(\"salesOrderCommand.k3CustomerName\");\r\n\r\n    // 客户列表查询的客户编码\r\n    private By customerCodeBy = By.name(\"k3Customer.customerCode\");\r\n\r\n    // 客户查询\r\n    private By queryBy = By.id(\"btnK3CustomerQuery\");\r\n    private By chooseCustomerBy = By.id(\"797215\");\r\n    private By confirmBy = By.id(\"btnK3CustomerQueryConfirm\");\r\n\r\n    // 收货人\r\n    private By receiverBy = By.id(\"receiver\");\r\n\r\n    // 手机\r\n    private By mobileBy = By.id(\"mobile\");\r\n\r\n    // 邮政编码\r\n    private By zipcodeBy = By.id(\"zipcode\");\r\n\r\n    // 省/市\r\n    private By provinceBy = By.id(\"provinceList\");\r\n\r\n    // 城市\r\n    private By cityBy = By.id(\"cityList\");\r\n\r\n    // 区\r\n    private By districtListBy = By.id(\"districtList\");\r\n\r\n    // 地址\r\n    private By addressBy = By.id(\"address\");\r\n\r\n    // 订单支付和发票信息\r\n    private By payAndInvoiceBy = By.xpath(\"//a[text()='订单支付和发票信息']/..\");\r\n\r\n    // 订单类型\r\n    private By orderTypeBy = By.id(\"salesOrderTypeChoose\");\r\n\r\n    // 支付方式\r\n    private By paymentTypeBy = By.id(\"paymentTypeList\");\r\n\r\n    // 平台原始订单编号\r\n    private By oocSourceBy = By.id(\"outerOrderCodeSource\");\r\n\r\n    // 平台订单编号\r\n    private By outerOrderCodeBy = By.id(\"outerOrderCode\");\r\n\r\n    // 订单明细信息\r\n    private By soLineBy = By.xpath(\"//a[text()='订单明细行信息']/..\");\r\n\r\n    // 新增行按钮\r\n    private By addLineBy = By.xpath(\"//span[text()='新增行']/..\");\r\n\r\n    // sku编码\r\n    private By skuCode1By = By.name(\"addLineList(-1).sku.code\");\r\n    private By skuCode2By = By.name(\"addLineList(-2).sku.code\");\r\n    private By skuCode3By = By.name(\"addLineList(-3).sku.code\");\r\n\r\n    // 销售价\r\n    private By actualprice1By = By.name(\"addLineList(-1).platformUnitPrice\");\r\n    private By actualprice2By = By.name(\"addLineList(-2).platformUnitPrice\");\r\n    private By actualprice3By = By.name(\"addLineList(-3).platformUnitPrice\");\r\n\r\n    // 购买数量\r\n    private By requestQyt1By = By.name(\"addLineList(-1).requestedQty\");\r\n    private By requestQyt2By = By.name(\"addLineList(-2).requestedQty\");\r\n    private By requestQyt3By = By.name(\"addLineList(-3).requestedQty\");\r\n\r\n    // 运费\r\n    private By transFeeBy = By.id(\"actualTransferFee\");\r\n\r\n    // 创建并提交\r\n    private By createAndSubmitBy = By.id(\"createAndSubmitBtn\");\r\n\r\n    public CreateSoPage(WebDriver driver) {\r\n        super(driver);\r\n        this.driver = driver;\r\n    }\r\n\r\n    // 订单基本信息\r\n    public void clickCustome() {\r\n        click(customerNameBy);\r\n    }\r\n\r\n    public void inputCustome(String customerName) {\r\n        // 强转类型\r\n        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;\r\n        // 通过js移除页面只读属性 方法一\r\n        jsExecutor.executeScript(\"document.getElementById('k3CustomerName').removeAttribute('readonly')\");\r\n        input(customerNameBy, customerName);\r\n    }\r\n\r\n    // 输入客户编码\r\n    public void inputCustomerCode(String customerCode) {\r\n        input(customerCodeBy, customerCode);\r\n    }\r\n\r\n    // 点击查询按钮\r\n    public void clickCustomerQuery() {\r\n        click(queryBy);\r\n    }\r\n\r\n    // 选中客户\r\n    public void chooseCustomer() {\r\n        click(chooseCustomerBy);\r\n    }\r\n\r\n    public void clickConfirm() {\r\n        click(confirmBy);\r\n    }\r\n\r\n    public void inputReceiver(String receiver) {\r\n        input(receiverBy, receiver);\r\n    }\r\n\r\n\r\n    public void inputMobile(String mobile) {\r\n        input(mobileBy, mobile);\r\n    }\r\n\r\n    public void inputZipCode(String zipCode) {\r\n        input(zipcodeBy, zipCode);\r\n    }\r\n\r\n    public void selectProvince(String province) {\r\n        select(provinceBy, province);\r\n    }\r\n\r\n    public void selectCity(String city) {\r\n        select(cityBy, city);\r\n    }\r\n\r\n    public void selectDistrict(String district) {\r\n        select(districtListBy, district);\r\n    }\r\n\r\n    public void inputAddress(String address) {\r\n        input(addressBy, address);\r\n    }\r\n\r\n    // 订单支付和发票信息页面\r\n    public void clickPaymentAndInvoice() {\r\n        click(payAndInvoiceBy);\r\n    }\r\n\r\n    public void selectOrderType(String orderType) {\r\n        select(orderTypeBy, orderType);\r\n    }\r\n    public void selectOrderType() {\r\n        select(orderTypeBy);\r\n    }\r\n\r\n\r\n    public void selectPaymentType(String paymentType) {\r\n        select(paymentTypeBy, paymentType);\r\n    }\r\n\r\n    public void selectPaymentType() {\r\n        select(paymentTypeBy);\r\n    }\r\n\r\n    public void inputOocSource(String oocSource) {\r\n        input(oocSourceBy, oocSource);\r\n    }\r\n\r\n    public void inputOutOrderCode(String outOrderCode) {\r\n        input(outerOrderCodeBy, outOrderCode);\r\n    }\r\n\r\n    // 订单明细行信息\r\n    public void clickOrderLine() {\r\n        click(soLineBy);\r\n    }\r\n\r\n    public void clickAddLine() {\r\n        click(addLineBy);\r\n    }\r\n\r\n    public void inputSkuCode1(String skuCode) {\r\n        input(skuCode1By, skuCode);\r\n    }\r\n\r\n    public void inputSkuCode2(String skuCode) {\r\n        input(skuCode2By, skuCode);\r\n    }\r\n\r\n    public void inputSkuCode3(String skuCode) {\r\n        input(skuCode3By, skuCode);\r\n    }\r\n\r\n    public void inputActualPrice1(Double actualPrice) {\r\n        input(actualprice1By, String.valueOf(actualPrice));\r\n    }\r\n    public void inputActualPrice2(Double actualPrice) {\r\n        input(actualprice2By, String.valueOf(actualPrice));\r\n    }\r\n    public void inputActualPrice3(Double actualPrice) {\r\n        input(actualprice3By, String.valueOf(actualPrice));\r\n    }\r\n\r\n    public void inputRequestQty1(int requestQty) {\r\n        input(requestQyt1By, String.valueOf(requestQty));\r\n    }\r\n\r\n    public void inputRequestQty2(int requestQty) {\r\n        input(requestQyt2By, String.valueOf(requestQty));\r\n    }\r\n\r\n    public void inputRequestQty3(int requestQty) {\r\n        input(requestQyt3By, String.valueOf(requestQty));\r\n    }\r\n\r\n    public void inputTransFee(Double transFee) {\r\n        input(transFeeBy, String.valueOf(transFee));\r\n    }\r\n\r\n    public void clickCreateAndSubmit() {\r\n        click(createAndSubmitBy);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+--- src/test/java/com/test/webauto/pageobject/CreateSoPage.java	(revision fcacbc01247ecb06b2f16b45c826dd53672481af)
++++ src/test/java/com/test/webauto/pageobject/CreateSoPage.java	(date 1609987594347)
+@@ -18,7 +18,7 @@
+ 
+     // 客户查询
+     private By queryBy = By.id("btnK3CustomerQuery");
+-    private By chooseCustomerBy = By.id("797215");
++    private By chooseCustomerBy = By.xpath("//*[@id=''tbl_k3_customer_query_dialog]/tbody/tr[2]");
+     private By confirmBy = By.id("btnK3CustomerQueryConfirm");
+ 
+     // 收货人
