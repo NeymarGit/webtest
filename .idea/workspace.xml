@@ -11,23 +11,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31e4888d-9839-477e-86d7-5f845587ce82" name="Default Changelist" comment="UAT环境的创单">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/common/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/common/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacAddUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacAddUserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacIndexPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/pageobject/UacIndexPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/CreateAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/UacAddUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/addaccount/testcase/UacAddUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/webauto/testcase/CreateSoCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/CreateAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/addaccount/testcase/CreateAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/CreateSoCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/CreateSoCase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/LoginCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/webauto/testcase/LoginCase.class" afterDir="false" />
-    </list>
-    <list id="88e21010-66fa-4ef8-a417-7d92273d9d47" name="Revert: " comment="" />
+    <list default="true" id="54f825a0-37be-4b9d-a1d2-2a73cd11ed93" name="Default Changelist" comment="减少差异" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
